@@ -1,0 +1,138 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: roboto;
+    background: #000000;
+    color : #ffffff;
+  }
+
+  h1{
+    font-size: 48px;
+  }
+  h2 {
+    font-size: 28px;
+  }
+  h3{
+    font-size : 20px;
+  }
+
+
+  .Banner{
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    width: 100%;
+    height:80%;
+  }
+  /* Style the top navigation bar */
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  /* Style the topnav links */
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change color on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  /* Style the header */
+  header {
+    grid-area: header;
+    font-size: 35px;
+    padding:10%;
+    position : static;
+  }
+
+
+  /* .banner-bg{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("turtlerabbit.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    width: 100%;
+    height:80%;
+    margin:10px;
+    content: 100%
+  } */
+
+  .banner-ct {
+    position: relative; /* Position the background text */
+    bottom: 0; /* At the bottom. Use top:0 to append it to the top */
+    color: #f1f1f1; /* Grey text */
+    width: 100%; /* Full width */
+  }
+  
+
+  /* The grid container */
+  .grid-container {
+    display: grid;
+    margin : 100px;
+    grid-template-areas: 
+      'header header header header header header' 
+      'left middle middle middle middle right' 
+      'footer footer footer footer footer footer';
+    /* grid-column-gap: 10px; - if you want gap between the columns */
+  } 
+  
+  .left,
+  .middle,
+  .right {
+    height: 300px; /* Should be removed. Only for demonstration */
+    padding: 30px;
+  }
+  
+  /* Style the left column */
+  .left {
+    grid-area: left;
+  }
+  
+  /* Style the middle column */
+  .middle {
+    grid-area: middle;
+    overflow:auto;
+  }
+  
+  /* Style the right column */
+  .right {
+    grid-area: right;
+  }
+  
+  /* Style the footer */
+  .footer {
+    grid-area: footer;
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+  @media (max-width: 600px) {
+    .grid-container  {
+      grid-template-areas: 
+        'header header header header header header' 
+        'left left left left left left' 
+        'middle middle middle middle middle middle' 
+        'right right right right right right' 
+        'footer footer footer footer footer footer';
+    }
+  }
+  /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+    .topnav a {
+      float: none;
+      width: 100%;
+    }
+  }
