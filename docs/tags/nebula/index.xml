@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Nebula on TurtleRabbit</title>
-    <link>https://wsu-turtlerabbit.github.io/public/tags/nebula/</link>
+    <link>https://wsu-turtlerabbit.github.io/docs/tags/nebula/</link>
     <description>Recent content in Nebula on TurtleRabbit</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 24 Sep 2023 11:15:17 +0700</lastBuildDate>
-    <atom:link href="https://wsu-turtlerabbit.github.io/public/tags/nebula/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://wsu-turtlerabbit.github.io/docs/tags/nebula/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Galactic Marvels: The Most Spectacular Nebulas in the Cosmos</title>
-      <link>https://wsu-turtlerabbit.github.io/public/posts/2023/galactic-marvels/</link>
+      <link>https://wsu-turtlerabbit.github.io/docs/posts/2023/galactic-marvels/</link>
       <pubDate>Sun, 24 Sep 2023 11:15:17 +0700</pubDate>
-      <guid>https://wsu-turtlerabbit.github.io/public/posts/2023/galactic-marvels/</guid>
+      <guid>https://wsu-turtlerabbit.github.io/docs/posts/2023/galactic-marvels/</guid>
       <description>In the vast expanse of the cosmos, one cannot help but be captivated by the breathtaking beauty of nebulae. These celestial marvels are often hidden in the depths of space, waiting to be discovered and admired by astronomers and space enthusiasts alike. In this article, we will embark on a cosmic journey to explore some of the most spectacular nebulas in the cosmos, shedding light on their unique features and the mysteries they hold.</description>
     </item>
   </channel>

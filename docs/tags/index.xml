@@ -2,143 +2,143 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on TurtleRabbit</title>
-    <link>https://wsu-turtlerabbit.github.io/public/tags/</link>
+    <link>https://wsu-turtlerabbit.github.io/docs/tags/</link>
     <description>Recent content in Tags on TurtleRabbit</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 12 Feb 2024 17:34:23 +1100</lastBuildDate>
-    <atom:link href="https://wsu-turtlerabbit.github.io/public/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://wsu-turtlerabbit.github.io/docs/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>AI</title>
-      <link>https://wsu-turtlerabbit.github.io/public/tags/ai/</link>
+      <link>https://wsu-turtlerabbit.github.io/docs/tags/ai/</link>
       <pubDate>Mon, 12 Feb 2024 17:34:23 +1100</pubDate>
-      <guid>https://wsu-turtlerabbit.github.io/public/tags/ai/</guid>
+      <guid>https://wsu-turtlerabbit.github.io/docs/tags/ai/</guid>
       <description></description>
     </item>
     <item>
       <title>Software</title>
-      <link>https://wsu-turtlerabbit.github.io/public/tags/software/</link>
+      <link>https://wsu-turtlerabbit.github.io/docs/tags/software/</link>
       <pubDate>Mon, 12 Feb 2024 17:34:23 +1100</pubDate>
-      <guid>https://wsu-turtlerabbit.github.io/public/tags/software/</guid>
+      <guid>https://wsu-turtlerabbit.github.io/docs/tags/software/</guid>
       <description></description>
     </item>
     <item>
       <title>Hardware Design</title>
-      <link>https://wsu-turtlerabbit.github.io/public/tags/hardware-design/</link>
+      <link>https://wsu-turtlerabbit.github.io/docs/tags/hardware-design/</link>
       <pubDate>Thu, 04 Jan 2024 12:01:27 +1100</pubDate>
-      <guid>https://wsu-turtlerabbit.github.io/public/tags/hardware-design/</guid>
+      <guid>https://wsu-turtlerabbit.github.io/docs/tags/hardware-design/</guid>
       <description></description>
     </item>
     <item>
       <title>3D Printing</title>
-      <link>https://wsu-turtlerabbit.github.io/public/tags/3d-printing/</link>
+      <link>https://wsu-turtlerabbit.github.io/docs/tags/3d-printing/</link>
       <pubDate>Thu, 09 Nov 2023 11:15:47 +1100</pubDate>
-      <guid>https://wsu-turtlerabbit.github.io/public/tags/3d-printing/</guid>
+      <guid>https://wsu-turtlerabbit.github.io/docs/tags/3d-printing/</guid>
       <description></description>
     </item>
     <item>
       <title>CNC</title>
-      <link>https://wsu-turtlerabbit.github.io/public/tags/cnc/</link>
+      <link>https://wsu-turtlerabbit.github.io/docs/tags/cnc/</link>
       <pubDate>Thu, 09 Nov 2023 11:15:47 +1100</pubDate>
-      <guid>https://wsu-turtlerabbit.github.io/public/tags/cnc/</guid>
+      <guid>https://wsu-turtlerabbit.github.io/docs/tags/cnc/</guid>
       <description></description>
     </item>
     <item>
       <title>Black Hole</title>
-      <link>https://wsu-turtlerabbit.github.io/public/tags/black-hole/</link>
+      <link>https://wsu-turtlerabbit.github.io/docs/tags/black-hole/</link>
       <pubDate>Wed, 04 Oct 2023 22:11:36 +0700</pubDate>
-      <guid>https://wsu-turtlerabbit.github.io/public/tags/black-hole/</guid>
+      <guid>https://wsu-turtlerabbit.github.io/docs/tags/black-hole/</guid>
       <description></description>
     </item>
     <item>
       <title>Relativity</title>
-      <link>https://wsu-turtlerabbit.github.io/public/tags/relativity/</link>
+      <link>https://wsu-turtlerabbit.github.io/docs/tags/relativity/</link>
       <pubDate>Wed, 04 Oct 2023 22:11:36 +0700</pubDate>
-      <guid>https://wsu-turtlerabbit.github.io/public/tags/relativity/</guid>
+      <guid>https://wsu-turtlerabbit.github.io/docs/tags/relativity/</guid>
       <description></description>
     </item>
     <item>
       <title>Space</title>
-      <link>https://wsu-turtlerabbit.github.io/public/tags/space/</link>
+      <link>https://wsu-turtlerabbit.github.io/docs/tags/space/</link>
       <pubDate>Wed, 04 Oct 2023 22:11:36 +0700</pubDate>
-      <guid>https://wsu-turtlerabbit.github.io/public/tags/space/</guid>
+      <guid>https://wsu-turtlerabbit.github.io/docs/tags/space/</guid>
       <description></description>
     </item>
     <item>
       <title>Cosmic</title>
-      <link>https://wsu-turtlerabbit.github.io/public/tags/cosmic/</link>
+      <link>https://wsu-turtlerabbit.github.io/docs/tags/cosmic/</link>
       <pubDate>Sun, 24 Sep 2023 11:15:17 +0700</pubDate>
-      <guid>https://wsu-turtlerabbit.github.io/public/tags/cosmic/</guid>
+      <guid>https://wsu-turtlerabbit.github.io/docs/tags/cosmic/</guid>
       <description></description>
     </item>
     <item>
       <title>Nebula</title>
-      <link>https://wsu-turtlerabbit.github.io/public/tags/nebula/</link>
+      <link>https://wsu-turtlerabbit.github.io/docs/tags/nebula/</link>
       <pubDate>Sun, 24 Sep 2023 11:15:17 +0700</pubDate>
-      <guid>https://wsu-turtlerabbit.github.io/public/tags/nebula/</guid>
+      <guid>https://wsu-turtlerabbit.github.io/docs/tags/nebula/</guid>
       <description></description>
     </item>
     <item>
       <title>Supernova</title>
-      <link>https://wsu-turtlerabbit.github.io/public/tags/supernova/</link>
+      <link>https://wsu-turtlerabbit.github.io/docs/tags/supernova/</link>
       <pubDate>Sat, 23 Sep 2023 22:45:37 +0700</pubDate>
-      <guid>https://wsu-turtlerabbit.github.io/public/tags/supernova/</guid>
+      <guid>https://wsu-turtlerabbit.github.io/docs/tags/supernova/</guid>
       <description></description>
     </item>
     <item>
       <title>Exploration</title>
-      <link>https://wsu-turtlerabbit.github.io/public/tags/exploration/</link>
+      <link>https://wsu-turtlerabbit.github.io/docs/tags/exploration/</link>
       <pubDate>Tue, 15 Aug 2023 13:45:49 +0700</pubDate>
-      <guid>https://wsu-turtlerabbit.github.io/public/tags/exploration/</guid>
+      <guid>https://wsu-turtlerabbit.github.io/docs/tags/exploration/</guid>
       <description></description>
     </item>
     <item>
       <title>Feature</title>
-      <link>https://wsu-turtlerabbit.github.io/public/tags/feature/</link>
+      <link>https://wsu-turtlerabbit.github.io/docs/tags/feature/</link>
       <pubDate>Tue, 15 Aug 2023 13:45:49 +0700</pubDate>
-      <guid>https://wsu-turtlerabbit.github.io/public/tags/feature/</guid>
+      <guid>https://wsu-turtlerabbit.github.io/docs/tags/feature/</guid>
       <description></description>
     </item>
     <item>
       <title>Mars</title>
-      <link>https://wsu-turtlerabbit.github.io/public/tags/mars/</link>
+      <link>https://wsu-turtlerabbit.github.io/docs/tags/mars/</link>
       <pubDate>Tue, 15 Aug 2023 13:45:49 +0700</pubDate>
-      <guid>https://wsu-turtlerabbit.github.io/public/tags/mars/</guid>
+      <guid>https://wsu-turtlerabbit.github.io/docs/tags/mars/</guid>
       <description></description>
     </item>
     <item>
       <title>Cosmos</title>
-      <link>https://wsu-turtlerabbit.github.io/public/tags/cosmos/</link>
+      <link>https://wsu-turtlerabbit.github.io/docs/tags/cosmos/</link>
       <pubDate>Sat, 12 Aug 2023 14:15:05 +0700</pubDate>
-      <guid>https://wsu-turtlerabbit.github.io/public/tags/cosmos/</guid>
+      <guid>https://wsu-turtlerabbit.github.io/docs/tags/cosmos/</guid>
       <description></description>
     </item>
     <item>
       <title>Telescopes</title>
-      <link>https://wsu-turtlerabbit.github.io/public/tags/telescopes/</link>
+      <link>https://wsu-turtlerabbit.github.io/docs/tags/telescopes/</link>
       <pubDate>Mon, 07 Aug 2023 09:30:32 +0700</pubDate>
-      <guid>https://wsu-turtlerabbit.github.io/public/tags/telescopes/</guid>
+      <guid>https://wsu-turtlerabbit.github.io/docs/tags/telescopes/</guid>
       <description></description>
     </item>
     <item>
       <title>Astronomy</title>
-      <link>https://wsu-turtlerabbit.github.io/public/tags/astronomy/</link>
+      <link>https://wsu-turtlerabbit.github.io/docs/tags/astronomy/</link>
       <pubDate>Sun, 30 Jul 2023 09:30:32 +0700</pubDate>
-      <guid>https://wsu-turtlerabbit.github.io/public/tags/astronomy/</guid>
+      <guid>https://wsu-turtlerabbit.github.io/docs/tags/astronomy/</guid>
       <description></description>
     </item>
     <item>
       <title>Telescope</title>
-      <link>https://wsu-turtlerabbit.github.io/public/tags/telescope/</link>
+      <link>https://wsu-turtlerabbit.github.io/docs/tags/telescope/</link>
       <pubDate>Sun, 30 Jul 2023 09:30:32 +0700</pubDate>
-      <guid>https://wsu-turtlerabbit.github.io/public/tags/telescope/</guid>
+      <guid>https://wsu-turtlerabbit.github.io/docs/tags/telescope/</guid>
       <description></description>
     </item>
     <item>
       <title>Exoplanets</title>
-      <link>https://wsu-turtlerabbit.github.io/public/tags/exoplanets/</link>
+      <link>https://wsu-turtlerabbit.github.io/docs/tags/exoplanets/</link>
       <pubDate>Thu, 27 Jul 2023 13:03:07 +0700</pubDate>
-      <guid>https://wsu-turtlerabbit.github.io/public/tags/exoplanets/</guid>
+      <guid>https://wsu-turtlerabbit.github.io/docs/tags/exoplanets/</guid>
       <description></description>
     </item>
   </channel>

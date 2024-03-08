@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Black Hole on TurtleRabbit</title>
-    <link>https://wsu-turtlerabbit.github.io/public/tags/black-hole/</link>
+    <link>https://wsu-turtlerabbit.github.io/docs/tags/black-hole/</link>
     <description>Recent content in Black Hole on TurtleRabbit</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 04 Oct 2023 22:11:36 +0700</lastBuildDate>
-    <atom:link href="https://wsu-turtlerabbit.github.io/public/tags/black-hole/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://wsu-turtlerabbit.github.io/docs/tags/black-hole/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Unveiling the Secrets of Black Holes: A Journey into the Heart of Darkness</title>
-      <link>https://wsu-turtlerabbit.github.io/public/posts/2023/unveiling-the-secrets-of-black-holes/</link>
+      <link>https://wsu-turtlerabbit.github.io/docs/posts/2023/unveiling-the-secrets-of-black-holes/</link>
       <pubDate>Wed, 04 Oct 2023 22:11:36 +0700</pubDate>
-      <guid>https://wsu-turtlerabbit.github.io/public/posts/2023/unveiling-the-secrets-of-black-holes/</guid>
+      <guid>https://wsu-turtlerabbit.github.io/docs/posts/2023/unveiling-the-secrets-of-black-holes/</guid>
       <description>In the vast expanse of the cosmos, there are few objects as mysterious and awe-inspiring as black holes. These enigmatic cosmic phenomena, once thought of as nothing more than theoretical curiosities, have now become a central focus of astronomical research. In this article, we embark on a journey deep into the heart of darkness, unraveling some of the secrets that lie within.&#xA;Black Holes: What and Why? Before delving deeper, let&amp;rsquo;s understand what a black hole actually is.</description>
     </item>
   </channel>
