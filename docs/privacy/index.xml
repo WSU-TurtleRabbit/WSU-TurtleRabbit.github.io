@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>CoHub Privacy &amp; Policy  on TurtleRabbit</title>
-    <link>https://wsu-turtlerabbit.github.io/docs/privacy/</link>
+    <link>https://wsu-turtlerabbit.github.io/privacy/</link>
     <description>Recent content in CoHub Privacy &amp; Policy  on TurtleRabbit</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate></lastBuildDate>
-    <atom:link href="https://wsu-turtlerabbit.github.io/docs/privacy/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://wsu-turtlerabbit.github.io/privacy/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
