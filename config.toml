@@ -3,7 +3,7 @@ languageCode = 'en-us'
 paginate = 6
 theme= "hugo-cohub"
 title = 'TurtleRabbit'
- 
+publishDir = "docs" 
 
   # Main Menu
   [[menu.Main]]
