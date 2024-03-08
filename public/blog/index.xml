@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Our Blog on TurtleRabbit</title>
+    <link>https://wsu-turtlerabbit.github.io/public/blog/</link>
+    <description>Recent content in Our Blog on TurtleRabbit</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 12 Feb 2024 17:34:23 +1100</lastBuildDate>
+    <atom:link href="https://wsu-turtlerabbit.github.io/public/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Soccer training</title>
+      <link>https://wsu-turtlerabbit.github.io/public/blog/soccer-training/</link>
+      <pubDate>Mon, 12 Feb 2024 17:34:23 +1100</pubDate>
+      <guid>https://wsu-turtlerabbit.github.io/public/blog/soccer-training/</guid>
+      <description>The software that runs locally on each robot translates requests for a robot velocity into individual motor velocities. From a centralised team controller, a computer outside the field, our robots receive the requested robot velocities, calculates the appropriate motor velocities using the geometry of the robot, and passes these resulting values to the individual controllers via a CAN bus interface. Low level control is handled by each motor controller and their firmware.</description>
+    </item>
+    <item>
+      <title>Version 1</title>
+      <link>https://wsu-turtlerabbit.github.io/public/blog/version-one/</link>
+      <pubDate>Thu, 04 Jan 2024 12:01:27 +1100</pubDate>
+      <guid>https://wsu-turtlerabbit.github.io/public/blog/version-one/</guid>
+      <description>Robots in RoboCup SSL do not have to follow a fixed design, but they do need to comply with some general rules. Most importantly, their size is limited to a diameter of 180 mm, and a height of 150 mm. The colourful pattern on top is used by the external vision system to identify individual robots from both teams. The ball used in this competition is an orange golf ball.</description>
+    </item>
+    <item>
+      <title>Built from scratch</title>
+      <link>https://wsu-turtlerabbit.github.io/public/blog/built-from-scratch/</link>
+      <pubDate>Thu, 09 Nov 2023 11:15:47 +1100</pubDate>
+      <guid>https://wsu-turtlerabbit.github.io/public/blog/built-from-scratch/</guid>
+      <description>Our motor mounts hold the BLDC motor on one side, and the controller on the opposite side. In our design, they also act as the connection between base plate and mid level plate in our design. Initially, we 3D printed the motor mounts, and cut the base plates from 3 mm plywood, but for thermal and mechanical reasons we decided to machine the motor mounts from 8 mm 6061-T651 aluminium. The base plate is machined from 3 mm 6061-T6 aluminium, and the mid-level plate from 2 mm 6061-T6.</description>
+    </item>
+    <item>
+      <title>Reinventing the wheel</title>
+      <link>https://wsu-turtlerabbit.github.io/public/blog/reinventing-the-wheel/</link>
+      <pubDate>Thu, 28 Sep 2023 18:16:38 +1000</pubDate>
+      <guid>https://wsu-turtlerabbit.github.io/public/blog/reinventing-the-wheel/</guid>
+      <description>We use a small, “outrunner” type drone motor with a diameter of 44.5 mm, and a height of 22 mm inside each wheel. The main wheel chassis is printed in PETG, while the front and rear wheel covers are milled from 3 mm 6061-T6 aluminium. The aluminium front wheel cover is directly attached to the flat front of the BLDC motor.&#xA;Subwheels Each main wheel holds 2 rows of 15 subwheels.</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,65 @@
+baseURL = 'https://wsu-turtlerabbit.github.io/public/'
+languageCode = 'en-us'
+paginate = 6
+theme= "hugo-cohub"
+title = 'TurtleRabbit'
+ 
+
+  # Main Menu
+  [[menu.Main]]
+  name = "Our robots"
+  url= "#gallery"
+  weight = 1
+  [[menu.Main]]
+  name = "About"
+  url= "/about/"
+  weight = 3
+  [[menu.Main]]
+  name = "Blog"
+  url= "#blog"
+  weight = 4
+  [[menu.Main]]
+  name = "FAQ"
+  url= "#faq"
+  weight = 6
+  [[menu.Main]]
+  name = "Contact"
+  url= "/contact/"
+  weight = 7
+
+  # Sitemap Menu
+  [[menu.sitemap]]
+  name = "Privacy Policy"
+  url = "https://www.westernsydney.edu.au/about_uws/leadership/governance/privacy_at_western_sydney_university"
+  weight = 1
+
+[params]
+  # theme_overrides = "css/overrides.css"
+  aboutPageURL = "blog"
+  contactLink = "contact"
+  copyright = "© {year} <a href=\"https://www.westernsydney.edu.au/\" target=\"_blank\">Western Sydney University </a>"
+  fabFormURL =  "https://fabform.io/f/cCNKH7r"
+  googleAnalytics = ""
+  logo = "images/logo.png"
+  footerlogo = "images/logo.png"
+  footerDescription = "Work described on this page has been produced by Western Sydney University students and academics."
+
+  # Social icons
+  [[params.social]]
+  icon = "ti-facebook"
+  url = "https://www.facebook.com/"
+  weight = 1
+  [[params.social]]
+  icon = "ti-twitter-alt"
+  url = "https://twitter.com/"
+  weight = 2
+  [[params.social]]
+  icon = "ti-dribbble"
+  url = "https://dribbble.com/"
+  weight = 3
+  [[params.social]]
+  icon = "ti-instagram"
+  url = "https://www.instagram.com/"
+  weight = 4
+  
+  

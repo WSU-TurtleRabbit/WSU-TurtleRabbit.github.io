@@ -1,0 +1,17 @@
+---
+enable: true
+title: "Frequently Asked Questions"
+faq:
+  - question: "Q. What is the RoboCup Small Size League?"
+    answer: >
+            The RoboCup Small Size League (SSL) is a global competition where teams from universities and research institutions compete with small robots playing soccer. The league emphasises the development of robotic and AI technologies for multiple robots in dynamic environments. Teams design and program their robots to work together autonomously without human intervention.
+  - question: "Q. Can I get involved?"
+    answer: >
+            If you are a student at Western Sydney University (in any discipline), the best way to get involved is via the Robotics, Automation and Manufacturing (RAM) club that you can join via Westernlife. 
+  - question: "Q. Are there opportunities for industry collaboration or sponsorship?"
+    answer: >
+            Absolutely! We welcome partnerships with industry leaders and innovators interested in advancing robotics and AI research. Sponsorship opportunities range from financial support to equipment donations and technical collaboration. If you're interested in supporting our team and gaining visibility in the robotics community, please reach out to us.  
+  - question: "Q. What skills can I gain by participating in the RoboCup Small Size League?"
+    answer: >
+            Participating in the SSL provides hands-on experience with robotics, artificial intelligence, computer vision, and collaborative software development. Team members also develop valuable skills in problem-solving, teamwork, and project management. It's an excellent opportunity to apply theoretical knowledge in a practical, competitive setting.
+---

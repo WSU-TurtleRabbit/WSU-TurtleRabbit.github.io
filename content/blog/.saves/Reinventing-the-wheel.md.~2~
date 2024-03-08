@@ -1,0 +1,13 @@
+---
+title: "Reinventing the wheel"
+date: 2023-09-28T18:16:38+10:00
+featureImage: images/blog/blog-thumb-1.jpg
+tags: [ "Hardware Design"]
+---
+
+We use a small, “outrunner” type drone motor with a diameter of 44.5 mm, and a height of 22 mm inside each wheel. The main wheel chassis is printed in PETG, while the front and rear wheel covers are milled from 3 mm 6061-T6 aluminium. The aluminium front wheel cover is directly attached to the flat front of the BLDC motor.
+
+### Subwheels
+
+Each main wheel holds 2 rows of 15 subwheels. Each of the 30 subwheels consists of a steel dowel pin, two flanged bearings, 2 washers, and two NBR X-rings as “tyres”.
+

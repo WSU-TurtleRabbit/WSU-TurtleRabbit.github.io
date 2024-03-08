@@ -1,0 +1,13 @@
+---
+title : "Take a look at our robots"
+enable: true
+subtitle: >
+        RoboCup is the largest annual robotics competition worldwide,
+        with the goal to foster research in AI and robotics. TurtleRabbit is our effort for RoboCup Small Size League (SSL), where teams of autonomous robots compete in a game of football (soccer). We are developing an open-source SSL team from scratch, with a deliberate cost-effective strategy using primarily off-the-shelf electronics components and 'hobby' BLDC motors, complemented by 3D printing and CNC milling. This approach helped us to streamline the development process and, with our open-sourced hardware design, hopefully will also lower the bar for other teams to enter RoboCup competitions in the future.
+description: Images of our robots
+galleryImage: 
+ - image: "images/gallery/assembled_robot-cutout.png"
+ - image: "images/gallery/drive.jpeg"
+ - image: "images/gallery/inside.jpeg"
+ - image: "images/gallery/IMG_5281.jpeg"
+---

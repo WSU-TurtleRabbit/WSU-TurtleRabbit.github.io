@@ -1,0 +1,13 @@
+---
+title : "Take a look at our robots"
+enable: true
+subtitle: >
+        RoboCup is the largest annual robotics competition worldwide,
+        with the goal to foster research in AI and robotics. TurtleRabbit
+description: Images of our Coworking Space
+galleryImage: 
+ - image: "images/gallery/gallery01.jpg"
+ - image: "images/gallery/gallery02.jpg"
+ - image: "images/gallery/gallery03.jpg"
+ - image: "images/gallery/gallery04.jpg"
+---

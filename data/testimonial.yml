@@ -1,0 +1,8 @@
+---
+enable: true
+testimonial:
+  - author: "RoboCup Federation"
+    testimonialDetails: "By the middle of the 21st century, a team of fully autonomous humanoid robot soccer players shall win a soccer game, complying with the official rules of FIFA, against the winner of the most recent World Cup."
+  - author: "Tomomi Kawarabayashi"
+    testimonialDetails: "No RoboCup, no life."
+---

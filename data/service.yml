@@ -1,0 +1,20 @@
+---
+enable: true
+title: "Quick facts"
+subtitle: >
+          about our approach
+services:
+  - name: "Open source hardware and software"
+    description: >
+                TurtleRabbit is open source hardware and software.
+    icon: "ti-linux"
+  - name: "The Only Australian SSL team"
+    description: >
+                Currently, TurtleRabbit is the only SSL team from Australia to attempt qualification for the RoboCup world championship.
+                The last team to qualify from Australia participated 20 years ago.
+    icon: "ti-infinite"
+  - name: "Unique approach"
+    description: >
+                We use off-the-shelf open-source controllers and brushless drone motors to build our robots.
+    icon: "ti-light-bulb"
+---
