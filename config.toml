@@ -1,9 +1,9 @@
-baseURL = 'https://wsu-turtlerabbit.github.io/public/'
+baseURL = 'https://wsu-turtlerabbit.github.io/'
 languageCode = 'en-us'
 paginate = 6
 theme= "hugo-cohub"
 title = 'TurtleRabbit'
-publishDir = "docs" 
+publishDir = 'docs'
 
   # Main Menu
   [[menu.Main]]
@@ -43,6 +43,27 @@ publishDir = "docs"
   logo = "images/logo.png"
   footerlogo = "images/logo.png"
   footerDescription = "Work described on this page has been produced by Western Sydney University students and academics."
+
+  [params.f360]
+  url = "https://westernsydney15.autodesk360.com/shares/public/SH512d4QTec90decfa6ec365f7176decf2c0?embed=true"
+  width = "800"
+  height = "400"
+  allowfullscreen = "true"
+  frameborder = "0"
+
+  [params.bookmarks]
+  name = "TurtleRabbit SSL Team"
+  url1 = "https://github.com/WSU-TurtleRabbit"
+  link1 = "https://github.com/WSU-TurtleRabbit"
+  title1 = "Our GitHub"
+  url2 = "https://arxiv.org/abs/2402.08205"
+  link2 = "https://arxiv.org/abs/2402.08205"
+  title2 = "2024 Team Description Paper"
+  url3 = "https://www.youtube.com/watch?v=Tbd5xCntCkw"
+  link3 = "https://www.youtube.com/watch?v=Tbd5xCntCkw"
+  title3 = "TurtleRabbit 2024 video"
+  description = " "
+  image = "images/render.png"
 
   # Social icons
   [[params.social]]

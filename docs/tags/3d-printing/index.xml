@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>3D Printing on TurtleRabbit</title>
-    <link>https://wsu-turtlerabbit.github.io/tags/3d-printing/</link>
+    <link>http://localhost:1313/tags/3d-printing/</link>
     <description>Recent content in 3D Printing on TurtleRabbit</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 09 Nov 2023 11:15:47 +1100</lastBuildDate>
-    <atom:link href="https://wsu-turtlerabbit.github.io/tags/3d-printing/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/3d-printing/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Built from scratch</title>
-      <link>https://wsu-turtlerabbit.github.io/blog/built-from-scratch/</link>
+      <link>http://localhost:1313/blog/built-from-scratch/</link>
       <pubDate>Thu, 09 Nov 2023 11:15:47 +1100</pubDate>
-      <guid>https://wsu-turtlerabbit.github.io/blog/built-from-scratch/</guid>
+      <guid>http://localhost:1313/blog/built-from-scratch/</guid>
       <description>Our motor mounts hold the BLDC motor on one side, and the controller on the opposite side. In our design, they also act as the connection between base plate and mid level plate in our design. Initially, we 3D printed the motor mounts, and cut the base plates from 3 mm plywood, but for thermal and mechanical reasons we decided to machine the motor mounts from 8 mm 6061-T651 aluminium. The base plate is machined from 3 mm 6061-T6 aluminium, and the mid-level plate from 2 mm 6061-T6.</description>
     </item>
   </channel>

@@ -1,0 +1,26 @@
+{{ $f360 := .Site.Params.f360 }}
+{{ $bookmarks := .Site.Params.bookmarks }}
+<section class="contact" id="contact">
+  <div class="container-fluid">
+    <div class="row no-gutters">
+      <div class="col-lg-6">
+	<iframe src={{ $f360.url }} width={{ $f360.width }} height={{ $f360.height }} allowfullscreen={{ $f360.allowfullsceen }} webkitallowfullscreen={{ $f360.allowfullsceen }} mozallowfullscreen={{ $f360.allowfullsceen }}  frameborder={{ $f360.frameborder }}></iframe>
+      </div>
+      <div class="col-lg-6">
+        <div class="contact-aria">
+          <h3>
+            {{ $bookmarks.name | safeHTML }}
+          </h3>
+          <ul>
+            <li>{{ $bookmarks.title1 }} <a href={{ $bookmarks.url1 }}><small>{{ $bookmarks.link1 }}</small></a></li>
+            <li>{{ $bookmarks.title2 }} <a href={{ $bookmarks.url2 }}><small>{{ $bookmarks.link2 }}</small></a></li>
+            <li>{{ $bookmarks.title3 }} <a href={{ $bookmarks.url3 }}><small>{{ $bookmarks.link3 }}</small></a></li>
+          </ul>
+          <p>
+            {{ $bookmarks.description }}
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
