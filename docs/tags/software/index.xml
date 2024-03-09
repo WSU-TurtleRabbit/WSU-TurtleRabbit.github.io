@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Software on TurtleRabbit</title>
-    <link>http://localhost:1313/tags/software/</link>
+    <link>https://wsu-turtlerabbit.github.io/tags/software/</link>
     <description>Recent content in Software on TurtleRabbit</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 12 Feb 2024 17:34:23 +1100</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/software/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://wsu-turtlerabbit.github.io/tags/software/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Soccer training</title>
-      <link>http://localhost:1313/blog/soccer-training/</link>
+      <link>https://wsu-turtlerabbit.github.io/blog/soccer-training/</link>
       <pubDate>Mon, 12 Feb 2024 17:34:23 +1100</pubDate>
-      <guid>http://localhost:1313/blog/soccer-training/</guid>
+      <guid>https://wsu-turtlerabbit.github.io/blog/soccer-training/</guid>
       <description>The software that runs locally on each robot translates requests for a robot velocity into individual motor velocities. From a centralised team controller, a computer outside the field, our robots receive the requested robot velocities, calculates the appropriate motor velocities using the geometry of the robot, and passes these resulting values to the individual controllers via a CAN bus interface. Low level control is handled by each motor controller and their firmware.</description>
     </item>
   </channel>
