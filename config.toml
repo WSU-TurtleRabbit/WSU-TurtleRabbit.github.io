@@ -45,7 +45,7 @@ publishDir = 'docs'
   footerDescription = "Work described on this page has been produced by Western Sydney University students and academics."
 
   [params.f360]
-  url = "https://westernsydney15.autodesk360.com/shares/public/SH512d4QTec90decfa6ec365f7176decf2c0?mode=embed"
+  url = "https://westernsydney15.autodesk360.com/shares/public/SH512d4QTec90decfa6e3d2e30041a89ddec?mode=embed"
   width = "800"
   height = "400"
   allowfullscreen = "true"
@@ -67,20 +67,20 @@ publishDir = 'docs'
 
   # Social icons
   [[params.social]]
-  icon = "ti-facebook"
-  url = "https://www.facebook.com/"
+  icon = "ti-github"
+  url = "https://github.com/WSU-TurtleRabbit"
   weight = 1
   [[params.social]]
-  icon = "ti-twitter-alt"
-  url = "https://twitter.com/"
+  icon = "ti-facebook"
+  url = "https://www.facebook.com/theRAMclub"
   weight = 2
   [[params.social]]
-  icon = "ti-dribbble"
-  url = "https://dribbble.com/"
+  icon = "ti-linkedin"
+  url = "https://www.linkedin.com/company/robotics-automation-and-manufacturing-club/"
   weight = 3
   [[params.social]]
   icon = "ti-instagram"
-  url = "https://www.instagram.com/"
+  url = "https://www.instagram.com/ws_ramclub"
   weight = 4
   
   
