@@ -45,7 +45,7 @@ publishDir = 'docs'
   footerDescription = "Work described on this page has been produced by Western Sydney University students and academics."
 
   [params.f360]
-  url = "https://westernsydney15.autodesk360.com/shares/public/SH512d4QTec90decfa6ec365f7176decf2c0?embed=true"
+  url = "https://westernsydney15.autodesk360.com/shares/public/SH512d4QTec90decfa6ec365f7176decf2c0?mode=embed"
   width = "800"
   height = "400"
   allowfullscreen = "true"
