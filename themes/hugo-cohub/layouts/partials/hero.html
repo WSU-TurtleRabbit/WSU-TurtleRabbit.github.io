@@ -22,6 +22,14 @@
           </div>
         </div>
       </div>
+      {{ if .sponsor }}
+      <div class="sponsor">
+        <p>{{ .sponsor.text | safeHTML }}</p>
+        <a href="{{ .sponsor.url }}" target="_blank">
+          <img src="{{ .sponsor.logo }}" alt="Sponsor Logo">
+        </a>
+      </div>
+      {{ end }}
     </div>
   </section>
 {{end}}

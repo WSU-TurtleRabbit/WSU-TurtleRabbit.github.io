@@ -2,130 +2,130 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://wsu-turtlerabbit.github.io/contact/</loc>
+    <loc>http://localhost:1313/contact/</loc>
     <lastmod>2024-03-08T11:25:11+06:00</lastmod>
   </url><url>
-    <loc>https://wsu-turtlerabbit.github.io/</loc>
+    <loc>http://localhost:1313/</loc>
     <lastmod>2024-03-08T11:25:11+06:00</lastmod>
   </url><url>
-    <loc>https://wsu-turtlerabbit.github.io/about/</loc>
+    <loc>http://localhost:1313/about/</loc>
     <lastmod>2024-03-08T11:21:03+11:00</lastmod>
   </url><url>
-    <loc>https://wsu-turtlerabbit.github.io/tags/ai/</loc>
+    <loc>http://localhost:1313/tags/ai/</loc>
     <lastmod>2024-02-12T17:34:23+11:00</lastmod>
   </url><url>
-    <loc>https://wsu-turtlerabbit.github.io/blog/</loc>
+    <loc>http://localhost:1313/blog/</loc>
     <lastmod>2024-02-12T17:34:23+11:00</lastmod>
   </url><url>
-    <loc>https://wsu-turtlerabbit.github.io/blog/soccer-training/</loc>
+    <loc>http://localhost:1313/blog/soccer-training/</loc>
     <lastmod>2024-02-12T17:34:23+11:00</lastmod>
   </url><url>
-    <loc>https://wsu-turtlerabbit.github.io/tags/software/</loc>
+    <loc>http://localhost:1313/tags/software/</loc>
     <lastmod>2024-02-12T17:34:23+11:00</lastmod>
   </url><url>
-    <loc>https://wsu-turtlerabbit.github.io/tags/</loc>
+    <loc>http://localhost:1313/tags/</loc>
     <lastmod>2024-02-12T17:34:23+11:00</lastmod>
   </url><url>
-    <loc>https://wsu-turtlerabbit.github.io/tags/hardware-design/</loc>
+    <loc>http://localhost:1313/tags/hardware-design/</loc>
     <lastmod>2024-01-04T12:01:27+11:00</lastmod>
   </url><url>
-    <loc>https://wsu-turtlerabbit.github.io/blog/version-one/</loc>
+    <loc>http://localhost:1313/blog/version-one/</loc>
     <lastmod>2024-01-04T12:01:27+11:00</lastmod>
   </url><url>
-    <loc>https://wsu-turtlerabbit.github.io/tags/3d-printing/</loc>
+    <loc>http://localhost:1313/tags/3d-printing/</loc>
     <lastmod>2023-11-09T11:15:47+11:00</lastmod>
   </url><url>
-    <loc>https://wsu-turtlerabbit.github.io/blog/built-from-scratch/</loc>
+    <loc>http://localhost:1313/blog/built-from-scratch/</loc>
     <lastmod>2023-11-09T11:15:47+11:00</lastmod>
   </url><url>
-    <loc>https://wsu-turtlerabbit.github.io/tags/cnc/</loc>
+    <loc>http://localhost:1313/tags/cnc/</loc>
     <lastmod>2023-11-09T11:15:47+11:00</lastmod>
   </url><url>
-    <loc>https://wsu-turtlerabbit.github.io/categories/astronomy/</loc>
+    <loc>http://localhost:1313/categories/astronomy/</loc>
     <lastmod>2023-10-04T22:11:36+07:00</lastmod>
   </url><url>
-    <loc>https://wsu-turtlerabbit.github.io/tags/black-hole/</loc>
+    <loc>http://localhost:1313/tags/black-hole/</loc>
     <lastmod>2023-10-04T22:11:36+07:00</lastmod>
   </url><url>
-    <loc>https://wsu-turtlerabbit.github.io/categories/</loc>
+    <loc>http://localhost:1313/categories/</loc>
     <lastmod>2023-10-04T22:11:36+07:00</lastmod>
   </url><url>
-    <loc>https://wsu-turtlerabbit.github.io/posts/</loc>
+    <loc>http://localhost:1313/posts/</loc>
     <lastmod>2023-10-04T22:11:36+07:00</lastmod>
   </url><url>
-    <loc>https://wsu-turtlerabbit.github.io/tags/relativity/</loc>
+    <loc>http://localhost:1313/tags/relativity/</loc>
     <lastmod>2023-10-04T22:11:36+07:00</lastmod>
   </url><url>
-    <loc>https://wsu-turtlerabbit.github.io/tags/space/</loc>
+    <loc>http://localhost:1313/tags/space/</loc>
     <lastmod>2023-10-04T22:11:36+07:00</lastmod>
   </url><url>
-    <loc>https://wsu-turtlerabbit.github.io/posts/2023/unveiling-the-secrets-of-black-holes/</loc>
+    <loc>http://localhost:1313/posts/2023/unveiling-the-secrets-of-black-holes/</loc>
     <lastmod>2023-10-04T22:11:36+07:00</lastmod>
   </url><url>
-    <loc>https://wsu-turtlerabbit.github.io/blog/reinventing-the-wheel/</loc>
+    <loc>http://localhost:1313/blog/reinventing-the-wheel/</loc>
     <lastmod>2023-09-28T18:16:38+10:00</lastmod>
   </url><url>
-    <loc>https://wsu-turtlerabbit.github.io/tags/cosmic/</loc>
+    <loc>http://localhost:1313/tags/cosmic/</loc>
     <lastmod>2023-09-24T11:15:17+07:00</lastmod>
   </url><url>
-    <loc>https://wsu-turtlerabbit.github.io/posts/2023/galactic-marvels/</loc>
+    <loc>http://localhost:1313/posts/2023/galactic-marvels/</loc>
     <lastmod>2023-09-24T11:15:17+07:00</lastmod>
   </url><url>
-    <loc>https://wsu-turtlerabbit.github.io/tags/nebula/</loc>
+    <loc>http://localhost:1313/tags/nebula/</loc>
     <lastmod>2023-09-24T11:15:17+07:00</lastmod>
   </url><url>
-    <loc>https://wsu-turtlerabbit.github.io/categories/space/</loc>
+    <loc>http://localhost:1313/categories/space/</loc>
     <lastmod>2023-09-24T11:15:17+07:00</lastmod>
   </url><url>
-    <loc>https://wsu-turtlerabbit.github.io/posts/2023/stellar-spectacles/</loc>
+    <loc>http://localhost:1313/posts/2023/stellar-spectacles/</loc>
     <lastmod>2023-09-23T22:45:37+07:00</lastmod>
   </url><url>
-    <loc>https://wsu-turtlerabbit.github.io/tags/supernova/</loc>
+    <loc>http://localhost:1313/tags/supernova/</loc>
     <lastmod>2023-09-23T22:45:37+07:00</lastmod>
   </url><url>
-    <loc>https://wsu-turtlerabbit.github.io/tags/exploration/</loc>
+    <loc>http://localhost:1313/tags/exploration/</loc>
     <lastmod>2023-08-15T13:45:49+07:00</lastmod>
   </url><url>
-    <loc>https://wsu-turtlerabbit.github.io/tags/feature/</loc>
+    <loc>http://localhost:1313/tags/feature/</loc>
     <lastmod>2023-08-15T13:45:49+07:00</lastmod>
   </url><url>
-    <loc>https://wsu-turtlerabbit.github.io/tags/mars/</loc>
+    <loc>http://localhost:1313/tags/mars/</loc>
     <lastmod>2023-08-15T13:45:49+07:00</lastmod>
   </url><url>
-    <loc>https://wsu-turtlerabbit.github.io/posts/2023/space-explorations-next-frontier/</loc>
+    <loc>http://localhost:1313/posts/2023/space-explorations-next-frontier/</loc>
     <lastmod>2023-08-15T13:45:49+07:00</lastmod>
   </url><url>
-    <loc>https://wsu-turtlerabbit.github.io/tags/cosmos/</loc>
+    <loc>http://localhost:1313/tags/cosmos/</loc>
     <lastmod>2023-08-12T14:15:05+07:00</lastmod>
   </url><url>
-    <loc>https://wsu-turtlerabbit.github.io/posts/2023/the-great-beyond/</loc>
+    <loc>http://localhost:1313/posts/2023/the-great-beyond/</loc>
     <lastmod>2023-08-12T14:15:05+07:00</lastmod>
   </url><url>
-    <loc>https://wsu-turtlerabbit.github.io/posts/2022/cosmic-time-travel/</loc>
+    <loc>http://localhost:1313/posts/2022/cosmic-time-travel/</loc>
     <lastmod>2023-08-07T09:30:32+07:00</lastmod>
   </url><url>
-    <loc>https://wsu-turtlerabbit.github.io/tags/telescopes/</loc>
+    <loc>http://localhost:1313/tags/telescopes/</loc>
     <lastmod>2023-08-07T09:30:32+07:00</lastmod>
   </url><url>
-    <loc>https://wsu-turtlerabbit.github.io/tags/astronomy/</loc>
+    <loc>http://localhost:1313/tags/astronomy/</loc>
     <lastmod>2023-07-30T09:30:32+07:00</lastmod>
   </url><url>
-    <loc>https://wsu-turtlerabbit.github.io/tags/telescope/</loc>
+    <loc>http://localhost:1313/tags/telescope/</loc>
     <lastmod>2023-07-30T09:30:32+07:00</lastmod>
   </url><url>
-    <loc>https://wsu-turtlerabbit.github.io/posts/2022/the-hubble-space-telescope/</loc>
+    <loc>http://localhost:1313/posts/2022/the-hubble-space-telescope/</loc>
     <lastmod>2023-07-30T09:30:32+07:00</lastmod>
   </url><url>
-    <loc>https://wsu-turtlerabbit.github.io/tags/exoplanets/</loc>
+    <loc>http://localhost:1313/tags/exoplanets/</loc>
     <lastmod>2023-07-27T13:03:07+07:00</lastmod>
   </url><url>
-    <loc>https://wsu-turtlerabbit.github.io/posts/2022/exoplanets-hunting/</loc>
+    <loc>http://localhost:1313/posts/2022/exoplanets-hunting/</loc>
     <lastmod>2023-07-27T13:03:07+07:00</lastmod>
   </url><url>
-    <loc>https://wsu-turtlerabbit.github.io/terms/</loc>
+    <loc>http://localhost:1313/terms/</loc>
     <lastmod>2022-01-08T12:52:02+06:00</lastmod>
   </url><url>
-    <loc>https://wsu-turtlerabbit.github.io/privacy/</loc>
+    <loc>http://localhost:1313/privacy/</loc>
     <lastmod>2022-01-08T12:51:52+06:00</lastmod>
   </url>
 </urlset>

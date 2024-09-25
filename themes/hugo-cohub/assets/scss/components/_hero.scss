@@ -17,6 +17,36 @@
     padding: 120px 0 80px;
   }
 
+.sponsor {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  text-align: right;
+  z-index: 2; 
+}
+
+.sponsor p {
+    margin: 0;
+  font-size: 18px; /* Adjust font size as needed */
+  color: #FFFFFF; /* Adjust colour as needed */
+}
+
+.sponsor a {
+  display: inline-block;
+  margin-top: 5px;
+}
+
+.sponsor img {
+  max-width: 150px; /* Adjust the size as needed */
+  height: auto; /* Maintain aspect ratio */
+  transition: transform 0.3s ease; /* Optional: Adds a hover effect */
+}
+
+.sponsor a:hover img {
+  transform: scale(1.05); /* Optional: Slight zoom on hover */
+}
+  
+
   &::after {
     content: "";
     position: absolute;
@@ -68,6 +98,8 @@
       }
     }
   }
+
+  
 
   &-video-player {
     margin-top: 30px;
