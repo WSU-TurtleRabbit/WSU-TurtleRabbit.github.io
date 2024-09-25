@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on TurtleRabbit</title>
-    <link>http://localhost:1313/categories/</link>
+    <link>https://wsu-turtlerabbit.github.io/categories/</link>
     <description>Recent content in Categories on TurtleRabbit</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 04 Oct 2023 22:11:36 +0700</lastBuildDate>
-    <atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://wsu-turtlerabbit.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Astronomy</title>
-      <link>http://localhost:1313/categories/astronomy/</link>
+      <link>https://wsu-turtlerabbit.github.io/categories/astronomy/</link>
       <pubDate>Wed, 04 Oct 2023 22:11:36 +0700</pubDate>
-      <guid>http://localhost:1313/categories/astronomy/</guid>
+      <guid>https://wsu-turtlerabbit.github.io/categories/astronomy/</guid>
       <description></description>
     </item>
     <item>
       <title>Space</title>
-      <link>http://localhost:1313/categories/space/</link>
+      <link>https://wsu-turtlerabbit.github.io/categories/space/</link>
       <pubDate>Sun, 24 Sep 2023 11:15:17 +0700</pubDate>
-      <guid>http://localhost:1313/categories/space/</guid>
+      <guid>https://wsu-turtlerabbit.github.io/categories/space/</guid>
       <description></description>
     </item>
   </channel>
