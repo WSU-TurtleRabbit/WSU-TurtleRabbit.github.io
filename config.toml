@@ -52,8 +52,6 @@ publishDir = 'docs'
   logo = "images/logo.png"
   footerlogo = "images/logo.png"
   footerDescription = "Work described on this page has been produced by Western Sydney University students and academics."
-  sponsorEmail = "turtlerabbit@westernsydney.edu.au"
-
   [params.f360]
   url = "https://westernsydney15.autodesk360.com/shares/public/SH512d4QTec90decfa6e3d2e30041a89ddec?mode=embed"
   width = "800"

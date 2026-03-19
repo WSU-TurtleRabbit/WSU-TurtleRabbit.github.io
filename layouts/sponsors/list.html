@@ -12,54 +12,16 @@
 
     {{ with .Site.Data.sponsors }}
     <!-- Current Sponsors -->
-    {{ range .tiers }}
-    {{ if .sponsors }}
-    <div class="sponsor-tier">
-      <h3 class="sponsor-tier-title {{ .tier }}">{{ .name }}</h3>
-      <div class="row">
-        {{ range .sponsors }}
-        <div class="col-lg-4 col-md-6 mb-4">
-          <a href="{{ .url }}" target="_blank" class="sponsor-card">
-            <img src="{{ .logo }}" alt="{{ .name }}">
-            <h4>{{ .name }}</h4>
-            <p>{{ .description }}</p>
-          </a>
-        </div>
-        {{ end }}
+    <div class="row justify-content-center">
+      {{ range .sponsors }}
+      <div class="col-lg-4 col-md-6 mb-4">
+        <a href="{{ .url }}" target="_blank" class="sponsor-card">
+          <img src="{{ .logo }}" alt="{{ .name }}">
+          <h4>{{ .name }}</h4>
+        </a>
       </div>
+      {{ end }}
     </div>
-    {{ end }}
-    {{ end }}
-
-    <!-- Sponsorship Tiers Info -->
-    {{ with .sponsorshipInfo }}
-    <div class="sponsor-tiers" style="padding-top: 40px;">
-      <div class="row">
-        <div class="col-lg-10 mx-auto">
-          <div class="section-title" style="margin-bottom: 40px;">
-            <h2>Sponsorship Tiers</h2>
-            <p>Choose a tier that works for you. Every contribution helps us build better robots and compete globally.</p>
-          </div>
-        </div>
-      </div>
-      <div class="row justify-content-center">
-        {{ range .tiers }}
-        <div class="col-lg-4 col-md-6 mb-4">
-          <div class="sponsor-card" style="text-align: left; align-items: flex-start;">
-            <h4 style="font-size: 20px; margin-bottom: 16px;">{{ .name }}</h4>
-            <ul style="list-style: none; padding: 0; margin: 0; width: 100%;">
-              {{ range .benefits }}
-              <li style="padding: 6px 0; font-size: 14px; color: #64748b; border-bottom: 1px solid #f1f5f9;">
-                <i class="ti-check" style="color: #06b6d4; margin-right: 8px;"></i>{{ . }}
-              </li>
-              {{ end }}
-            </ul>
-          </div>
-        </div>
-        {{ end }}
-      </div>
-    </div>
-    {{ end }}
     {{ end }}
   </div>
 </section>
@@ -71,7 +33,7 @@
       <div class="col-lg-8 mx-auto text-center">
         <h2>Interested in Sponsoring?</h2>
         <p style="color: #e2e8f0; margin-bottom: 40px; opacity: 0.8;">
-          Get in touch with us to discuss sponsorship opportunities. We'd love to partner with you.
+          Get in touch with us to discuss sponsorship opportunities.
         </p>
         <div class="sponsorship-form">
           <form action="{{ .Site.Params.fabFormURL }}" method="POST">
@@ -85,13 +47,6 @@
               </div>
             </div>
             <input type="email" class="form-control" name="email" placeholder="Email Address" required>
-            <select class="form-control" name="Sponsorship_Tier" style="background: #1e293b; border: 1px solid rgba(255,255,255,0.1); color: #fff; border-radius: 8px; padding: 14px 18px; margin-bottom: 20px; font-size: 15px;">
-              <option value="" disabled selected style="color: rgba(255,255,255,0.4);">Sponsorship Tier of Interest</option>
-              <option value="Gold">Gold</option>
-              <option value="Silver">Silver</option>
-              <option value="Bronze">Bronze</option>
-              <option value="Other">Other / Custom</option>
-            </select>
             <textarea class="form-control" name="message" placeholder="Tell us about your interest in sponsoring TurtleRabbit..." rows="4"></textarea>
             <button type="submit" class="btn btn-primary" formtarget="_blank">Send Inquiry</button>
           </form>

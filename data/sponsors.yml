@@ -2,41 +2,9 @@
 enable: true
 title: "Our Sponsors"
 subtitle: >
-        TurtleRabbit is made possible by the generous support of our sponsors. Their contributions help us push the boundaries of robotics research and compete on the world stage.
-tiers:
-  - name: "Gold Sponsors"
-    tier: "gold"
-    sponsors:
-      - name: "Westpac"
-        logo: "/images/westpac-logo.png"
-        url: "https://www.westpac.com.au/"
-        description: "Supporting TurtleRabbit since 2024"
-  - name: "Silver Sponsors"
-    tier: "silver"
-    sponsors: []
-  - name: "Bronze Sponsors"
-    tier: "bronze"
-    sponsors: []
-sponsorshipInfo:
-  title: "Become a Sponsor"
-  subtitle: "Partner with us and support the future of autonomous robotics at Western Sydney University."
-  tiers:
-    - name: "Gold"
-      benefits:
-        - "Logo on robot and team uniform"
-        - "Featured on website homepage"
-        - "Social media mentions"
-        - "Invitation to team events and demos"
-        - "Acknowledgement in research papers"
-    - name: "Silver"
-      benefits:
-        - "Logo on team uniform"
-        - "Featured on sponsors page"
-        - "Social media mentions"
-        - "Invitation to team events"
-    - name: "Bronze"
-      benefits:
-        - "Featured on sponsors page"
-        - "Social media mention"
-        - "Team newsletter updates"
+        TurtleRabbit is made possible by the generous support of our sponsors.
+sponsors:
+  - name: "Westpac"
+    logo: "/images/westpac-logo.png"
+    url: "https://www.westpac.com.au/"
 ---
