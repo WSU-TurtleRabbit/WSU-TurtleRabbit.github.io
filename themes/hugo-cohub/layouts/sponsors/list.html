@@ -1,0 +1,58 @@
+{{define "main"}}
+<section class="sponsors-page">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 mx-auto col-md-12">
+        <div class="page-header">
+          <h2>{{ .Title }}</h2>
+          <p>{{ .Params.subTitle }}</p>
+        </div>
+      </div>
+    </div>
+
+    {{ with .Site.Data.sponsors }}
+    <!-- Current Sponsors -->
+    <div class="row justify-content-center">
+      {{ range .sponsors }}
+      <div class="col-lg-4 col-md-6 mb-4">
+        <a href="{{ .url }}" target="_blank" class="sponsor-card">
+          <img src="{{ .logo }}" alt="{{ .name }}">
+          <h4>{{ .name }}</h4>
+        </a>
+      </div>
+      {{ end }}
+    </div>
+    {{ end }}
+  </div>
+</section>
+
+<!-- Sponsorship Contact Form -->
+<section class="sponsorship-form-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto text-center">
+        <h2>Interested in Sponsoring?</h2>
+        <p style="color: #e2e8f0; margin-bottom: 40px; opacity: 0.8;">
+          Get in touch with us to discuss sponsorship opportunities.
+        </p>
+        <div class="sponsorship-form">
+          <form action="{{ .Site.Params.fabFormURL }}" method="POST">
+            <input type="hidden" name="_subject" value="Sponsorship Inquiry - TurtleRabbit">
+            <div class="row">
+              <div class="col-md-6">
+                <input type="text" class="form-control" name="Name" placeholder="Your Name" required>
+              </div>
+              <div class="col-md-6">
+                <input type="text" class="form-control" name="Organisation" placeholder="Organisation">
+              </div>
+            </div>
+            <input type="email" class="form-control" name="email" placeholder="Email Address" required>
+            <textarea class="form-control" name="message" placeholder="Tell us about your interest in sponsoring TurtleRabbit..." rows="4"></textarea>
+            <button type="submit" class="btn btn-primary" formtarget="_blank">Send Inquiry</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{end}}
