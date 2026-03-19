@@ -13,16 +13,16 @@
       <div class="col-lg-8 mx-auto">
         <div class="contact-form">
           <h2>Contact Form</h2>
-          <form id="contact-form" class="row" action="{{ .Site.Params.fabFormURL }}" method="POST">
+          <form id="contact-form" class="row" action="https://discord.com/api/webhooks/1484032793976635522/eqiXNDYYxqoi4wH23i-dgJvRaBW-L85gV8Gef6BEhp5Mk3Hx2b9JIVXWCxYw-Qudv3ZY" method="POST">
             <div class="col-md-6">
-              <input type="text" class="form-control" id="exampleFormControlInput1" name="Name" placeholder="Your Name">
+              <input type="text" class="form-control" id="exampleFormControlInput1" name="Name" placeholder="Your Name" required="">
             </div>
             <div class="col-md-6">
               <input type="email" class="form-control" id="validationCustom02" required="" name="email" placeholder="Your Email">
             </div>
             <div class="col-md-12">
               <textarea class="form-control" id="exampleFormControlTextarea1" rows="8" name="message"
-                placeholder="Message here…"></textarea>
+                placeholder="Message here…" required=""></textarea>
             </div>
             <div class="col-md-12">
               <div class="form-check">
@@ -33,13 +33,10 @@
               </div>
             </div>
             <div class="col-lg-12">
-              <button type="submit" class="btn btn-primary" id="contact-form-button" formtarget="_blank">Send Message</button>
+              <button type="submit" class="btn btn-primary" id="contact-form-button">Send Message</button>
             </div>
             <p id="contact-form-status"></p>
           </form>
-          <p class="contact-form-generator mt-3">
-            <strong>** </strong> <a href="https://fabform.io/" target="_blank">Static website forms</a>
-          </p>
         </div>
       </div>
     </div>
