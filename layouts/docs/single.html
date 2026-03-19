@@ -1,0 +1,71 @@
+{{define "main"}}
+<section class="docs-page">
+  <div class="container">
+    <div class="row">
+      <!-- Sidebar -->
+      <div class="col-lg-3 col-md-4">
+        <div class="docs-sidebar">
+          <h4>Documentation</h4>
+          {{ $categories := dict }}
+          {{ range (where .Site.RegularPages "Section" "docs") }}
+            {{ $cat := .Params.category | default "general" }}
+            {{ if not (index $categories $cat) }}
+              {{ $categories = merge $categories (dict $cat (slice .)) }}
+            {{ else }}
+              {{ $categories = merge $categories (dict $cat (append (index $categories $cat) .)) }}
+            {{ end }}
+          {{ end }}
+
+          {{ range $cat, $pages := $categories }}
+          <h4 style="margin-top: 20px;">{{ $cat | title }}</h4>
+          <ul>
+            {{ range $pages }}
+            <li {{ if eq $.Permalink .Permalink }}class="active"{{ end }}>
+              <a href="{{ .Permalink }}">{{ .Title }}</a>
+            </li>
+            {{ end }}
+          </ul>
+          {{ end }}
+
+          <div style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e2e8f0;">
+            <a href="/docs/" style="font-size: 14px; font-weight: 500;"><span>&#8592;</span> All Documentation</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Main content -->
+      <div class="col-lg-9 col-md-8">
+        <div class="docs-content">
+          <h1>{{ .Title }}</h1>
+          <div class="doc-meta">
+            {{ with .Params.category }}
+            <span class="badge">{{ . | title }}</span>
+            {{ end }}
+            {{ with .Params.author }}
+            <span><i class="ti-user"></i> {{ . }}</span>
+            {{ end }}
+            <span><i class="ti-calendar"></i> {{ .Date.Format "January 2, 2006" }}</span>
+            {{ with .Params.robot }}
+            <span><i class="ti-settings"></i> {{ . }}</span>
+            {{ end }}
+            {{ with .Params.version }}
+            <span>v{{ . }}</span>
+            {{ end }}
+          </div>
+
+          {{ .Content }}
+
+          <!-- Edit on GitHub -->
+          <div style="margin-top: 60px; padding-top: 20px; border-top: 1px solid #e2e8f0;">
+            <a href="https://github.com/WSU-TurtleRabbit/WSU-TurtleRabbit.github.io/edit/main/content/{{ .File.Path }}"
+               target="_blank"
+               style="font-size: 14px; font-weight: 500; color: #64748b;">
+              <i class="ti-pencil"></i> Edit this page on GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{end}}

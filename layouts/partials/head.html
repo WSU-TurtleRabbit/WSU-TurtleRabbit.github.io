@@ -1,0 +1,49 @@
+  <head>
+    <meta charset="utf-8" />
+    <title>{{.Title}} | TurtleRabbit - RoboCup SSL Team</title>
+
+    {{ "<!--Meta For No Index-->" | safeHTML }}
+    <meta name="description" content="TurtleRabbit is a RoboCup Small Size League robot soccer team from Western Sydney University, Australia.">
+
+    {{ "<!--mobile responsive meta-->" | safeHTML }}
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    {{hugo.Generator}}
+
+    {{ "<!-- Fonts -->" | safeHTML }}
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    {{ "<!-- Critical CSS -->" | safeHTML }}
+    {{$style :=  resources.Get "scss/critical.scss" | css.Sass | resources.Minify }}
+    <link href="{{ $style.Permalink }}" rel="stylesheet" />
+
+    {{ with .Site.Params.theme_overrides }}
+    {{ $theme_overrides := resources.Get . | minify | fingerprint "sha512" }}
+    <link rel="stylesheet" href="{{ $theme_overrides.RelPermalink }}" integrity="{{ $theme_overrides.Data.Integrity }}">
+    {{ end }}
+
+    {{"<!-- Favicon -->" | safeHTML}}
+    <link rel="shortcut icon" href="{{"images/favicon.ico" | absURL}}" type="image/x-icon" />
+    <link rel="icon" href="{{"images/favicon.png" | absURL}}" type="image/x-icon" />
+
+    {{ with .Site.Params.googleAnalytics }}
+    {{ "<!-- Global Site Tag (gtag.js) - Google Analytics -->" | safeHTML }}
+    <script async src="https://www.googletagmanager.com/gtag/js?id={{ . }}"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', '{{ . }}');
+
+    </script>
+    {{ end }}
+
+
+  </head>
+

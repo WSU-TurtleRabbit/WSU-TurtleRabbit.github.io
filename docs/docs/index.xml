@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Documentation on TurtleRabbit</title><link>https://wsu-turtlerabbit.github.io/docs/</link><description>Recent content in Documentation on TurtleRabbit</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Mon, 20 Jan 2025 00:00:00 +1100</lastBuildDate><atom:link href="https://wsu-turtlerabbit.github.io/docs/index.xml" rel="self" type="application/rss+xml"/><item><title>Software Architecture</title><link>https://wsu-turtlerabbit.github.io/docs/software-architecture/</link><pubDate>Mon, 20 Jan 2025 00:00:00 +1100</pubDate><guid>https://wsu-turtlerabbit.github.io/docs/software-architecture/</guid><description>&lt;h2 id="overview">Overview&lt;/h2>
+&lt;p>The TurtleRabbit software system is responsible for making strategic decisions, processing vision data, and sending commands to the robots on the field. This document outlines the high-level architecture.&lt;/p>
+&lt;h2 id="system-components">System Components&lt;/h2>
+&lt;h3 id="ssl-vision">SSL-Vision&lt;/h3>
+&lt;p>SSL-Vision is a shared vision system used by all SSL teams. Cameras mounted above the field detect robot and ball positions, providing this data to both teams over the network.&lt;/p>
+&lt;h3 id="strategy--ai">Strategy &amp;amp; AI&lt;/h3>
+&lt;p>The strategy layer decides what each robot should do based on the current game state. This includes:&lt;/p></description></item><item><title>Robot Overview</title><link>https://wsu-turtlerabbit.github.io/docs/robot-overview/</link><pubDate>Wed, 15 Jan 2025 00:00:00 +1100</pubDate><guid>https://wsu-turtlerabbit.github.io/docs/robot-overview/</guid><description>&lt;h2 id="overview">Overview&lt;/h2>
+&lt;p>The TurtleRabbit SSL robot is designed with a cost-effective, open-source approach using primarily off-the-shelf components and hobby BLDC motors. This document provides a high-level overview of the robot&amp;rsquo;s key subsystems.&lt;/p>
+&lt;h2 id="design-philosophy">Design Philosophy&lt;/h2>
+&lt;p>Our approach prioritises:&lt;/p>
+&lt;ol>
+&lt;li>&lt;strong>Cost-effectiveness&lt;/strong> - Using off-the-shelf components where possible&lt;/li>
+&lt;li>&lt;strong>Accessibility&lt;/strong> - Open-source design files and documentation&lt;/li>
+&lt;li>&lt;strong>Manufacturability&lt;/strong> - 3D printing and CNC milling for custom parts&lt;/li>
+&lt;li>&lt;strong>Modularity&lt;/strong> - Easy to assemble, disassemble, and repair&lt;/li>
+&lt;/ol>
+&lt;h2 id="key-subsystems">Key Subsystems&lt;/h2>
+&lt;h3 id="drivetrain">Drivetrain&lt;/h3>
+&lt;p>The robot uses a 4-wheel omni-directional drive system with hobby brushless DC motors. This allows movement in any direction without needing to rotate first.&lt;/p></description></item><item><title>How to Contribute Documentation</title><link>https://wsu-turtlerabbit.github.io/docs/contributing-to-docs/</link><pubDate>Wed, 01 Jan 2025 00:00:00 +1100</pubDate><guid>https://wsu-turtlerabbit.github.io/docs/contributing-to-docs/</guid><description>&lt;h2 id="overview">Overview&lt;/h2>
+&lt;p>All TurtleRabbit documentation is stored as Markdown files in the &lt;code>content/docs/&lt;/code> directory of our GitHub repository. Anyone can contribute by creating a new file and submitting a pull request.&lt;/p>
+&lt;h2 id="how-to-add-a-new-document">How to Add a New Document&lt;/h2>
+&lt;h3 id="step-1-create-a-new-file">Step 1: Create a New File&lt;/h3>
+&lt;p>Create a new &lt;code>.md&lt;/code> file in the &lt;code>content/docs/&lt;/code> directory. Name it using lowercase with hyphens (e.g., &lt;code>motor-controller-setup.md&lt;/code>).&lt;/p>
+&lt;h3 id="step-2-add-frontmatter">Step 2: Add Frontmatter&lt;/h3>
+&lt;p>Every document must start with YAML frontmatter. Here are the required and optional fields:&lt;/p></description></item></channel></rss>

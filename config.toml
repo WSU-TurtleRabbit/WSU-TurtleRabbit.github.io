@@ -1,23 +1,32 @@
 baseURL = 'https://wsu-turtlerabbit.github.io/'
 languageCode = 'en-us'
-paginate = 6
+[pagination]
+  pagerSize = 6
 theme= "hugo-cohub"
 title = 'TurtleRabbit'
 publishDir = 'docs'
 
   # Main Menu
   [[menu.Main]]
-  name = "Our robots"
+  name = "Our Robots"
   url= "#gallery"
   weight = 1
   [[menu.Main]]
   name = "About"
   url= "/about/"
+  weight = 2
+  [[menu.Main]]
+  name = "Docs"
+  url= "/docs/"
   weight = 3
   [[menu.Main]]
   name = "Blog"
   url= "#blog"
   weight = 4
+  [[menu.Main]]
+  name = "Sponsors"
+  url= "/sponsors/"
+  weight = 5
   [[menu.Main]]
   name = "FAQ"
   url= "#faq"
@@ -34,7 +43,7 @@ publishDir = 'docs'
   weight = 1
 
 [params]
-  # theme_overrides = "css/overrides.css"
+  theme_overrides = "css/overrides.css"
   aboutPageURL = "blog"
   contactLink = "contact"
   copyright = "© {year} <a href=\"https://www.westernsydney.edu.au/\" target=\"_blank\">Western Sydney University </a>"
@@ -43,6 +52,7 @@ publishDir = 'docs'
   logo = "images/logo.png"
   footerlogo = "images/logo.png"
   footerDescription = "Work described on this page has been produced by Western Sydney University students and academics."
+  sponsorEmail = "turtlerabbit@westernsydney.edu.au"
 
   [params.f360]
   url = "https://westernsydney15.autodesk360.com/shares/public/SH512d4QTec90decfa6e3d2e30041a89ddec?mode=embed"
@@ -82,5 +92,4 @@ publishDir = 'docs'
   icon = "ti-instagram"
   url = "https://www.instagram.com/ws_ramclub"
   weight = 4
-  
-  
+

@@ -1,0 +1,86 @@
+{{define "main"}}
+<section class="docs-page">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="page-header">
+          <h2>{{ .Title }}</h2>
+          <p>{{ .Params.subTitle }}</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contributing callout -->
+    <div class="docs-contribute-callout">
+      <h3>Want to add documentation?</h3>
+      <p>
+        Documentation is maintained as Markdown files in the <code>content/docs/</code> directory of our GitHub repository.
+        Create a new <code>.md</code> file with the standard frontmatter and submit a pull request.
+      </p>
+      <a href="https://github.com/WSU-TurtleRabbit/WSU-TurtleRabbit.github.io/tree/main/content/docs" target="_blank">
+        View on GitHub <span>&#8594;</span>
+      </a>
+    </div>
+
+    <!-- Category filters -->
+    <div class="docs-filter">
+      <span class="filter-btn active" onclick="filterDocs('all')">All</span>
+      <span class="filter-btn" onclick="filterDocs('mechanical')">Mechanical</span>
+      <span class="filter-btn" onclick="filterDocs('electrical')">Electrical</span>
+      <span class="filter-btn" onclick="filterDocs('software')">Software</span>
+      <span class="filter-btn" onclick="filterDocs('firmware')">Firmware</span>
+      <span class="filter-btn" onclick="filterDocs('vision')">Vision</span>
+      <span class="filter-btn" onclick="filterDocs('general')">General</span>
+    </div>
+
+    <!-- Documentation cards -->
+    <div class="row" id="docs-grid">
+      {{ $pages := .Pages.ByDate.Reverse }}
+      {{ if eq (len $pages) 0 }}
+      <div class="col-12">
+        <div style="text-align: center; padding: 60px 20px; color: #64748b;">
+          <i class="ti-file" style="font-size: 48px; display: block; margin-bottom: 16px; opacity: 0.3;"></i>
+          <h3 style="font-weight: 600; margin-bottom: 8px;">No documentation yet</h3>
+          <p>Be the first to contribute! Follow the guide above to add documentation.</p>
+        </div>
+      </div>
+      {{ else }}
+      {{ range $pages }}
+      <div class="col-lg-4 col-md-6 mb-4 docs-item" data-category="{{ .Params.category | default "general" }}">
+        <a href="{{ .Permalink }}" class="docs-card">
+          <span class="doc-category {{ .Params.category | default "general" }}">{{ .Params.category | default "General" }}</span>
+          <h3>{{ .Title }}</h3>
+          <p>{{ .Params.description | default .Summary | truncate 120 }}</p>
+          <div class="doc-footer">
+            {{ with .Params.author }}<span>{{ . }}</span> · {{ end }}
+            <span>{{ .Date.Format "Jan 2, 2006" }}</span>
+            {{ with .Params.robot }} · <span>{{ . }}</span>{{ end }}
+          </div>
+        </a>
+      </div>
+      {{ end }}
+      {{ end }}
+    </div>
+  </div>
+</section>
+
+<script>
+function filterDocs(category) {
+  var items = document.querySelectorAll('.docs-item');
+  var buttons = document.querySelectorAll('.filter-btn');
+
+  buttons.forEach(function(btn) {
+    btn.classList.remove('active');
+  });
+  event.target.classList.add('active');
+
+  items.forEach(function(item) {
+    if (category === 'all' || item.getAttribute('data-category') === category) {
+      item.style.display = '';
+    } else {
+      item.style.display = 'none';
+    }
+  });
+}
+</script>
+{{end}}
