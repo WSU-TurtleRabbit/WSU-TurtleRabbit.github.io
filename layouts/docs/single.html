@@ -6,20 +6,10 @@
       <div class="col-lg-3 col-md-4">
         <div class="docs-sidebar">
           <h4>Documentation</h4>
-          {{ $categories := dict }}
-          {{ range (where .Site.RegularPages "Section" "docs") }}
-            {{ $cat := .Params.category | default "general" }}
-            {{ if not (index $categories $cat) }}
-              {{ $categories = merge $categories (dict $cat (slice .)) }}
-            {{ else }}
-              {{ $categories = merge $categories (dict $cat (append (index $categories $cat) .)) }}
-            {{ end }}
-          {{ end }}
-
-          {{ range $cat, $pages := $categories }}
-          <h4 style="margin-top: 20px;">{{ $cat | title }}</h4>
+          {{ range (where .Site.RegularPages "Section" "docs").GroupByParam "category" }}
+          <h4 style="margin-top: 20px;">{{ .Key | default "general" | title }}</h4>
           <ul>
-            {{ range $pages }}
+            {{ range .Pages }}
             <li {{ if eq $.Permalink .Permalink }}class="active"{{ end }}>
               <a href="{{ .Permalink }}">{{ .Title }}</a>
             </li>
