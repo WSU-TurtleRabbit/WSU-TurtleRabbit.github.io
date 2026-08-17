@@ -1,0 +1,15 @@
+---
+enable: true
+# The whole-team photo shown at the top of /team/.
+teamPhoto: "/images/team-2026.jpeg"
+teamPhotoCaption: "The TurtleRabbits, 2026"
+#
+# Individual member cards. Left empty on purpose — the members grid is skipped
+# entirely while this list is empty, so the page shows just the team photo.
+# To switch it on, add entries here (portraits go in static/images/team/):
+#   members:
+#     - name: "Jane Doe"
+#       role: "Mechanical Lead"
+#       photo: "/images/team/jane-doe.jpg"
+members: []
+---

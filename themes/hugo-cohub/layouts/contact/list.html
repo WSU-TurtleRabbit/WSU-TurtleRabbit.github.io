@@ -13,7 +13,13 @@
       <div class="col-lg-8 mx-auto">
         <div class="contact-form">
           <h2>Contact Form</h2>
-          <form id="contact-form" class="row" action="https://discord.com/api/webhooks/1484032793976635522/eqiXNDYYxqoi4wH23i-dgJvRaBW-L85gV8Gef6BEhp5Mk3Hx2b9JIVXWCxYw-Qudv3ZY" method="POST">
+          <!--
+            A Discord webhook URL used to be hardcoded here. It was removed: it did
+            not work (Discord requires a `content` field, not `Name`/`email`/`message`)
+            and a webhook URL is a secret that must never ship in public HTML.
+            This template is superseded by layouts/contact/list.html at project level.
+          -->
+          <form id="contact-form" class="row" action="" method="POST">
             <div class="col-md-6">
               <input type="text" class="form-control" id="exampleFormControlInput1" name="Name" placeholder="Your Name" required="">
             </div>

@@ -7,14 +7,18 @@
       </div>
       <div class="col-lg-6">
         <div class="contact-aria">
-          <h3>
-            {{ $bookmarks.name | safeHTML }}
-          </h3>
-          <ul>
-            <li>{{ $bookmarks.title1 }} <a href={{ $bookmarks.url1 }}><small>{{ $bookmarks.link1 }}</small></a></li>
-            <li>{{ $bookmarks.title2 }} <a href={{ $bookmarks.url2 }}><small>{{ $bookmarks.link2 }}</small></a></li>
-            <li>{{ $bookmarks.title3 }} <a href={{ $bookmarks.url3 }}><small>{{ $bookmarks.link3 }}</small></a></li>
-          </ul>
+          {{ range $bookmarks.groups }}
+          <div class="bookmark-group">
+            <h3>
+              {{ .name | safeHTML }}
+            </h3>
+            <ul>
+              {{ range .links }}
+              <li>{{ .title }} <a href="{{ .url }}" target="_blank"><small>{{ .label }}</small></a></li>
+              {{ end }}
+            </ul>
+          </div>
+          {{ end }}
           <p>
             {{ $bookmarks.description }}
           </p>

@@ -17,11 +17,16 @@ $(document).ready(function () {
 
   // Smooth scroll
   $("a.scroll-to").on("click", function (event) {
+    // No target on this page: let the browser follow the link instead.
+    var target = this.hash ? $(this.hash) : $();
+    if (!target.length) {
+      return;
+    }
     $("html, body")
       .stop()
       .animate(
         {
-          scrollTop: $(this.hash).offset().top - 50,
+          scrollTop: target.offset().top - 50,
         },
         1000
       );

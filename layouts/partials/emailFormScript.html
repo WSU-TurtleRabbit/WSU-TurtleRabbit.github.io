@@ -1,0 +1,105 @@
+<!--
+  Shared handler for the site's contact-style forms.
+
+  This is a static GitHub Pages build with no server to accept a form POST, so
+  instead of submitting anywhere, these forms gather their fields and hand the
+  result to the visitor's mail client as a pre-filled message. Nothing is sent
+  to a third party, and no credentials live in the page.
+
+  Markup contract — the script drives itself entirely from data attributes:
+
+    <form data-inbox="a@b.com"          destination address (required)
+          data-subject="Enquiry"        subject prefix
+          data-subject-from="id1 id2"   append first non-empty field's value
+          data-status="status-el-id">   element to write progress into
+
+      <input id="id1" data-label="Name">          labelled in the email body
+      <input id="id2" data-label="Phone" data-optional>
+
+  A button with data-copy-for="<form id>" copies the same composed message to
+  the clipboard, for visitors with no mail client configured.
+-->
+<script>
+  (function () {
+    var forms = document.querySelectorAll('form[data-inbox]');
+    if (!forms.length) return;
+
+    // Builds the plain-text body so the inbox receives every field clearly
+    // labelled, rather than a bare message with no attribution.
+    function compose(form) {
+      var inbox = form.getAttribute('data-inbox');
+      var fields = form.querySelectorAll('[data-label]');
+      var lines = ['Submitted via the RAM website', ''];
+      var message = '';
+
+      Array.prototype.forEach.call(fields, function (field) {
+        var label = field.getAttribute('data-label');
+        var text = (field.value || '').trim();
+
+        // The free-text message goes last, on its own, so it stays readable.
+        if (field.tagName === 'TEXTAREA') {
+          message = text;
+          return;
+        }
+        lines.push(label + ': ' + (text || '(not supplied)'));
+      });
+
+      if (message) lines.push('', 'Message:', message);
+
+      var suffix = '';
+      var sources = (form.getAttribute('data-subject-from') || '').split(/\s+/);
+      for (var i = 0; i < sources.length; i++) {
+        var el = sources[i] && document.getElementById(sources[i]);
+        if (el && el.value.trim()) { suffix = ' - ' + el.value.trim(); break; }
+      }
+
+      return {
+        inbox: inbox,
+        subject: (form.getAttribute('data-subject') || 'Website enquiry') + suffix,
+        body: lines.join('\n')
+      };
+    }
+
+    function statusFor(form) {
+      return document.getElementById(form.getAttribute('data-status') || '');
+    }
+
+    function say(form, text) {
+      var el = statusFor(form);
+      if (el) el.textContent = text;
+    }
+
+    Array.prototype.forEach.call(forms, function (form) {
+      form.addEventListener('submit', function (event) {
+        event.preventDefault();
+        if (typeof form.reportValidity === 'function' && !form.reportValidity()) return;
+
+        var mail = compose(form);
+        say(form, 'Opening your email app…');
+        window.location.href = 'mailto:' + mail.inbox +
+          '?subject=' + encodeURIComponent(mail.subject) +
+          '&body=' + encodeURIComponent(mail.body);
+      });
+    });
+
+    Array.prototype.forEach.call(document.querySelectorAll('[data-copy-for]'), function (button) {
+      button.addEventListener('click', function () {
+        var form = document.getElementById(button.getAttribute('data-copy-for'));
+        if (!form) return;
+
+        var mail = compose(form);
+        var text = 'To: ' + mail.inbox + '\nSubject: ' + mail.subject + '\n\n' + mail.body;
+
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          navigator.clipboard.writeText(text).then(function () {
+            say(form, 'Copied. Paste it into an email to ' + mail.inbox);
+          }, function () {
+            say(form, 'Could not copy — please email ' + mail.inbox + ' directly.');
+          });
+        } else {
+          say(form, 'Copying is not supported here — please email ' + mail.inbox + ' directly.');
+        }
+      });
+    });
+  })();
+</script>

@@ -1,14 +1,16 @@
 ---
-title : "<h1>TurtleRabbit is a
-            <br> robot soccer team.</h1>"
+title : "<h1>RAM builds robots at
+            <br> Western Sydney University.</h1>"
 enable: true
 subtitle: >
-        We are from Western Sydney University, Australia. Competing in the RoboCup Small Size League with open-source, cost-effective robots built from scratch.
+        Robotics, Automation & Manufacturing is a student club in the Faculty of Engineering, Computing and Science. Our flagship team, TurtleRabbit, competes in the RoboCup Small Size League with open-source, cost-effective robots built from scratch.
 heroBGimg: "images/hero/hero-bg.jpg"
-heroVideo : "https://www.youtube.com/watch?v=Tbd5xCntCkw?autoplay=1&rel=0"
-herosVideoDesc: "<span> <strong>TurtleRabbit 2025</strong> qualification video</span>"
+# No heroVideo/herosVideoDesc: the video now plays inline in the section below
+# the hero (see data/video.yml). Setting heroVideo again would bring back the
+# popup play icon and its caption.
+# NOTE: the /sponsors/ page is a separate file — update data/sponsors.yml too.
 sponsor:
   text: "Our sponsor"
-  url: "https://www.westpac.com.au/"
-  logo: "/images/westpac-logo.png"
+  url: "https://www.amazon.com.au/"
+  logo: "/images/amazon-logo.png"
 ---

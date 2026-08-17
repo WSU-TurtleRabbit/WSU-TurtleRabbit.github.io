@@ -2,3 +2,6 @@
 .saves
 .hugo_build.lock
 public/
+
+# Local agent/session handoff notes — contains local paths, not for publication
+context.md

@@ -1,0 +1,44 @@
+{{ define "main" }}
+<section class="team-page">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 mx-auto col-md-12">
+        <div class="page-header">
+          <h2>{{ .Title }}</h2>
+          <p>{{ .Params.subTitle }}</p>
+        </div>
+      </div>
+    </div>
+
+    {{ with .Site.Data.team }}
+    {{ if .teamPhoto }}
+    <div class="row">
+      <div class="col-lg-10 mx-auto col-md-12">
+        <figure class="team-photo">
+          <img src="{{ .teamPhoto }}" alt="{{ .teamPhotoCaption | default "The TurtleRabbit team" }}">
+          {{ with .teamPhotoCaption }}
+          <figcaption>{{ . }}</figcaption>
+          {{ end }}
+        </figure>
+      </div>
+    </div>
+    {{ end }}
+
+    {{/* Member cards render only once data/team.yml lists members. */}}
+    {{ if .members }}
+    <div class="row justify-content-center team-members">
+      {{ range .members }}
+      <div class="col-lg-3 col-md-4 col-6 mb-4">
+        <div class="team-member">
+          <img src="{{ .photo }}" alt="{{ .name }}">
+          <h4>{{ .name }}</h4>
+          {{ with .role }}<p>{{ . }}</p>{{ end }}
+        </div>
+      </div>
+      {{ end }}
+    </div>
+    {{ end }}
+    {{ end }}
+  </div>
+</section>
+{{ end }}

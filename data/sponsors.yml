@@ -2,9 +2,17 @@
 enable: true
 title: "Our Sponsors"
 subtitle: >
-        TurtleRabbit is made possible by the generous support of our sponsors.
-sponsors:
-  - name: "Westpac"
-    logo: "/images/westpac-logo.png"
-    url: "https://www.westpac.com.au/"
+        RAM is made possible by the generous support of our sponsors.
+# NOTE: the hero sponsor strip is a separate file — update data/hero.yml too.
+#
+# Sponsors are grouped by academic year, newest first — that is the order they
+# render in, so add each new year at the TOP of this list.
+# Only add a year block once that year has at least one confirmed sponsor;
+# a block with an empty `sponsors` list is skipped rather than rendered empty.
+years:
+  - year: "2025–2026"
+    sponsors:
+      - name: "Amazon"
+        logo: "/images/amazon-logo.png"
+        url: "https://www.amazon.com.au/"
 ---
