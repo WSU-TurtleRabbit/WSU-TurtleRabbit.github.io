@@ -1,7 +1,7 @@
-baseURL = 'https://wsu-turtlerabbit.github.io/'
+baseURL = 'https://www.turtlerabbit.org/'
 languageCode = 'en-us'
 theme= "hugo-cohub"
-title = 'TurtleRabbit'
+title = 'RAM'
 publishDir = 'public'
 
 [pagination]
@@ -9,33 +9,37 @@ publishDir = 'public'
 
   # Main Menu
   [[menu.Main]]
-  name = "Our Robots"
-  url= "#gallery"
+  name = "Home"
+  url= "/"
   weight = 1
   [[menu.Main]]
   name = "About"
   url= "/about/"
   weight = 2
   [[menu.Main]]
+  name = "Team"
+  url= "/team/"
+  weight = 3
+  [[menu.Main]]
   name = "Docs"
   url= "/docs/"
-  weight = 3
+  weight = 4
   [[menu.Main]]
   name = "Blog"
   url= "#blog"
-  weight = 4
+  weight = 5
   [[menu.Main]]
   name = "Sponsors"
   url= "/sponsors/"
-  weight = 5
+  weight = 6
   [[menu.Main]]
   name = "FAQ"
   url= "#faq"
-  weight = 6
+  weight = 7
   [[menu.Main]]
   name = "Contact"
   url= "/contact/"
-  weight = 7
+  weight = 8
 
   # Sitemap Menu
   [[menu.sitemap]]
@@ -44,14 +48,25 @@ publishDir = 'public'
   weight = 1
 
 [params]
+  tagline = "Robotics, Automation & Manufacturing at Western Sydney University"
+  description = "RAM is the Robotics, Automation and Manufacturing club at Western Sydney University. Our flagship team, TurtleRabbit, competes in the RoboCup Small Size League with open-source robots built from scratch."
   theme_overrides = "css/overrides.css"
   aboutPageURL = "blog"
   contactLink = "contact"
   copyright = "© {year} <a href=\"https://www.westernsydney.edu.au/\" target=\"_blank\">Western Sydney University </a>"
+  # Destination for sponsorship expressions of interest. The form on /sponsors/
+  # composes a mailto: from this address — there is no server-side handler, so
+  # changing this address is all that is needed to redirect enquiries.
+  sponsorshipEmail = "ram_exec@student.westernsydney.edu.au"
+  # Unused. Left in place only because the theme's own contact/sponsors
+  # templates still reference it; the project templates no longer do.
   fabFormURL =  "https://fabform.io/f/cCNKH7r"
   googleAnalytics = ""
-  logo = "images/logo.png"
-  footerlogo = "images/logo.png"
+  # Black artwork on transparency is deliberate: overrides.css applies
+  # `filter: brightness(0) invert(1)` over the dark hero and in the footer,
+  # and `filter: none` on the light scrolled nav. Black+alpha works in both.
+  logo = "images/ram-logo.png"
+  footerlogo = "images/ram-logo.png"
   footerDescription = "Work described on this page has been produced by Western Sydney University students and academics."
   [params.f360]
   url = "https://westernsydney15.autodesk360.com/shares/public/SH512d4QTec90decfa6e3d2e30041a89ddec?mode=embed"
@@ -61,18 +76,28 @@ publishDir = 'public'
   frameborder = "0"
 
   [params.bookmarks]
-  name = "TurtleRabbit SSL Team"
-  url1 = "https://github.com/WSU-TurtleRabbit"
-  link1 = "https://github.com/WSU-TurtleRabbit"
-  title1 = "Our GitHub"
-  url2 = "https://arxiv.org/abs/2402.08205"
-  link2 = "https://arxiv.org/abs/2402.08205"
-  title2 = "2024 Team Description Paper"
-  url3 = "https://www.youtube.com/watch?v=Tbd5xCntCkw"
-  link3 = "https://www.youtube.com/watch?v=Tbd5xCntCkw"
-  title3 = "TurtleRabbit 2024 video"
   description = " "
   image = "images/render.png"
+
+  # Each group renders as its own <h3> + <ul>. Add a group to add a list.
+    [[params.bookmarks.groups]]
+    name = "TurtleRabbit SSL Team"
+      [[params.bookmarks.groups.links]]
+      title = "Our GitHub"
+      url = "https://github.com/WSU-TurtleRabbit"
+      label = "https://github.com/WSU-TurtleRabbit"
+      [[params.bookmarks.groups.links]]
+      title = "2025 Team Description Paper"
+      url = "https://tdpsearch.com/paper/soccer_smallsize__2025__TurtleRabbit"
+      label = "https://tdpsearch.com/paper/soccer_smallsize__2025__TurtleRabbit"
+      [[params.bookmarks.groups.links]]
+      title = "RAM Club YouTube"
+      url = "https://www.youtube.com/@RAMClub_WS"
+      label = "https://www.youtube.com/@RAMClub_WS"
+      [[params.bookmarks.groups.links]]
+      title = "Find all our links"
+      url = "https://linktr.ee/ramclub"
+      label = "https://linktr.ee/ramclub"
 
   # Social icons
   [[params.social]]

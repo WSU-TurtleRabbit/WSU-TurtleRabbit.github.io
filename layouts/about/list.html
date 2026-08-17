@@ -33,11 +33,13 @@
     </div>
   </div>
 </section>
-{{ partial "gallery.html" . }}
+{{/* gallery.html ("Take a look at our robots") is deliberately NOT called here —
+     it already appears on the homepage (layouts/index.html) and was duplicating.
+     fusion.html (the Autodesk Fusion 360 embed) was also removed: the shared model
+     failed to load and showed an Oops error in place of the viewer. */}}
 {{ partial "testimonial.html" . }}
 {{ partial "client.html" . }}
 {{ partial "investor.html" . }}
-{{ partial "fusion.html" . }}
 
 
 {{end}}

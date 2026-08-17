@@ -1,8 +1,8 @@
   <head>
     <meta charset="utf-8" />
-    <title>{{.Title}} | TurtleRabbit - RoboCup SSL Team</title>
+    <title>{{ if .IsHome }}{{ .Site.Title }}{{ with .Site.Params.tagline }} - {{ . }}{{ end }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
 
-    <meta name="description" content="TurtleRabbit is a RoboCup Small Size League robot soccer team from Western Sydney University, Australia.">
+    <meta name="description" content="{{ .Site.Params.description }}">
 
     {{ "<!-- Fonts -->" | safeHTML }}
     <link rel="preconnect" href="https://fonts.googleapis.com">

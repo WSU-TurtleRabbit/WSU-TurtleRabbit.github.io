@@ -257,6 +257,33 @@ a:hover { color: var(--primary-hover); text-decoration: none; }
 }
 
 /* ============================================
+   VIDEO — Autoplaying 16:9 embed
+   ============================================ */
+.video-section {
+  padding: 96px 0 !important;
+  background: var(--gray-50) !important;
+}
+.video-embed {
+  position: relative;
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  aspect-ratio: 16 / 9;
+  border-radius: var(--radius-lg) !important;
+  overflow: hidden !important;
+  box-shadow: var(--shadow-xl) !important;
+  border: 1px solid var(--gray-200) !important;
+  background: var(--dark) !important;
+}
+.video-embed iframe {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* ============================================
    GALLERY — Clean card grid
    ============================================ */
 .gallery {
@@ -403,7 +430,9 @@ a:hover { color: var(--primary-hover); text-decoration: none; }
   padding: 120px 0 !important;
   background-size: cover !important;
   background-position: center !important;
-  background-attachment: fixed !important;
+  /* Was `fixed`: parallax made the visible crop depend on scroll position
+     (often cutting off faces), and it is unreliable on iOS Safari. */
+  background-attachment: scroll !important;
 }
 .testimonial::before {
   content: '' !important;
@@ -494,6 +523,15 @@ a:hover { color: var(--primary-hover); text-decoration: none; }
   font-weight: 500 !important;
 }
 .contact .contact-aria ul li a:hover { color: #fff !important; }
+/* Second and later link groups get a divider above them */
+.contact .contact-aria .bookmark-group + .bookmark-group {
+  margin-top: 8px !important;
+  padding-top: 32px !important;
+  border-top: 1px solid rgba(255,255,255,0.08) !important;
+}
+.contact .contact-aria .bookmark-group:last-child ul { margin-bottom: 0 !important; }
+/* Long URLs must wrap, not overflow the dark panel */
+.contact .contact-aria ul li a small { overflow-wrap: anywhere !important; }
 
 /* ============================================
    FOOTER — Dark minimal
@@ -594,10 +632,38 @@ a:hover { color: var(--primary-hover); text-decoration: none; }
   padding-top: 140px !important;
 }
 .about .page-header h2 { font-weight: 800 !important; }
-.story { padding: 72px 0 !important; }
+/* Bottom padding here is what sets the gap above the quotes block that follows,
+   so it is trimmed to lift the quotes higher without moving the story text. */
+.story { padding: 72px 0 40px !important; }
 .story-content { padding-right: 36px; }
 .story-content h2 { font-weight: 700 !important; margin-bottom: 16px !important; }
 .story-content p { line-height: 1.85 !important; color: var(--gray-600) !important; }
+
+/* ============================================
+   QUOTES (About page)
+   ============================================
+   The theme sizes this with a fixed `margin: 0 140px` plus three separate
+   breakpoint overrides, which leaves the quote cramped on mid-size screens and
+   overly wide on large ones. Replaced with a fluid measure: clamp() for the type
+   and a ch-based max-width, so it reads identically at every viewport with no
+   breakpoints of its own. */
+.quotes {
+  padding: 8px 0 64px !important; /* bottom room for the slick dots at -40px */
+}
+.quotes-slider-item h2 {
+  font-size: clamp(21px, 2.6vw, 34px) !important;
+  line-height: 1.45 !important;
+  font-weight: 500 !important;
+  max-width: 46ch !important;
+  margin: 0 auto 16px !important;
+  padding: 0 20px !important;
+  text-wrap: balance;
+}
+.quotes-slider-item span {
+  color: var(--gray-500) !important;
+  font-size: 14px !important;
+  letter-spacing: 0.02em !important;
+}
 
 /* ============================================
    PAGE HEADERS
@@ -614,6 +680,70 @@ a:hover { color: var(--primary-hover); text-decoration: none; }
 }
 
 /* ============================================
+   TEAM PAGE
+   ============================================ */
+.team-page {
+  padding: 150px 0 80px !important;
+  background: var(--gray-50) !important;
+}
+.team-page .page-header { padding-bottom: 48px !important; }
+.team-photo {
+  margin: 0 0 56px !important;
+  border-radius: var(--radius-lg) !important;
+  overflow: hidden !important;
+  box-shadow: var(--shadow-xl) !important;
+  border: 1px solid var(--gray-200) !important;
+  background: var(--white) !important;
+}
+.team-photo img {
+  width: 100% !important;
+  height: auto !important;
+  display: block !important;
+}
+.team-photo figcaption {
+  padding: 16px 20px !important;
+  font-size: 13px !important;
+  font-weight: 500 !important;
+  letter-spacing: 0.04em !important;
+  color: var(--gray-500) !important;
+  text-align: center !important;
+  background: var(--white) !important;
+}
+/* Member cards — unused until data/team.yml lists members */
+.team-member {
+  background: var(--white) !important;
+  border: 1px solid var(--gray-200) !important;
+  border-radius: var(--radius) !important;
+  padding: 24px 16px !important;
+  text-align: center !important;
+  height: 100% !important;
+  transition: all 0.3s ease !important;
+}
+.team-member:hover {
+  transform: translateY(-3px) !important;
+  box-shadow: var(--shadow-lg) !important;
+  border-color: var(--primary) !important;
+}
+.team-member img {
+  width: 96px !important;
+  height: 96px !important;
+  border-radius: 50% !important;
+  object-fit: cover !important;
+  margin-bottom: 14px !important;
+}
+.team-member h4 {
+  font-size: 15px !important;
+  font-weight: 600 !important;
+  color: var(--gray-800) !important;
+  margin-bottom: 4px !important;
+}
+.team-member p {
+  font-size: 13px !important;
+  color: var(--gray-500) !important;
+  margin-bottom: 0 !important;
+}
+
+/* ============================================
    SPONSORS PAGE
    ============================================ */
 .sponsors-page {
@@ -621,6 +751,28 @@ a:hover { color: var(--primary-hover); text-decoration: none; }
   background: var(--gray-50) !important;
 }
 .sponsors-page .page-header { padding-bottom: 48px !important; }
+.sponsor-year { margin-bottom: 48px !important; }
+.sponsor-year:last-child { margin-bottom: 0 !important; }
+.sponsor-year-title {
+  font-size: 13px !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.12em !important;
+  text-transform: uppercase !important;
+  color: var(--gray-500) !important;
+  text-align: center !important;
+  margin-bottom: 28px !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 18px !important;
+}
+/* hairline rules either side of the year label */
+.sponsor-year-title::before,
+.sponsor-year-title::after {
+  content: '' !important;
+  flex: 1 !important;
+  height: 1px !important;
+  background: var(--gray-200) !important;
+}
 .sponsor-card {
   background: var(--white) !important;
   border: 1px solid var(--gray-200) !important;
@@ -685,6 +837,36 @@ a:hover { color: var(--primary-hover); text-decoration: none; }
 }
 .sponsorship-form textarea.form-control { min-height: 100px !important; }
 .sponsorship-form .btn-primary { width: 100% !important; padding: 13px !important; }
+/* ---- mailto form helper text (shared by /sponsors/ and /contact/) ----
+   Defaults suit a light background; the dark sponsorship band overrides below. */
+.email-form-note {
+  max-width: 560px !important;
+  margin: 16px auto 0 !important;
+  color: var(--gray-500) !important;
+  font-size: 13px !important;
+  line-height: 1.6 !important;
+}
+.email-form-note a { color: var(--primary) !important; }
+/* Styled as a link so the clipboard fallback reads as prose, not a second CTA */
+.email-form-copy {
+  background: none !important;
+  border: 0 !important;
+  padding: 0 !important;
+  color: var(--primary) !important;
+  font: inherit !important;
+  text-decoration: underline !important;
+  cursor: pointer !important;
+}
+.email-form-status {
+  max-width: 560px !important;
+  margin: 8px auto 0 !important;
+  min-height: 20px !important;
+  color: var(--dark) !important;
+  font-size: 13px !important;
+}
+.sponsorship-form-section .email-form-note a,
+.sponsorship-form-section .email-form-copy { color: var(--accent) !important; }
+.sponsorship-form-section .email-form-status { color: #e2e8f0 !important; }
 
 /* ============================================
    DOCUMENTATION
@@ -772,6 +954,10 @@ a:hover { color: var(--primary-hover); text-decoration: none; }
   border-radius: var(--radius-sm) !important;
   margin-bottom: 18px !important;
   font-size: 13px !important;
+  /* The docs contain code lines over 200 characters. Without this the block
+     stretches the whole page and every doc scrolls sideways on a phone. */
+  max-width: 100% !important;
+  overflow-x: auto !important;
 }
 .docs-content code {
   background: var(--gray-100) !important;
@@ -781,6 +967,10 @@ a:hover { color: var(--primary-hover); text-decoration: none; }
   color: var(--gray-700) !important;
 }
 .docs-content pre code { background: none !important; padding: 0 !important; color: inherit !important; }
+/* Inline code and long URLs break instead of overflowing. This does not affect
+   code inside <pre>, where `white-space: pre` disables overflow-wrap. */
+.docs-content code,
+.docs-content a { overflow-wrap: anywhere !important; }
 .docs-content table { width: 100% !important; border-collapse: collapse !important; margin-bottom: 18px !important; }
 .docs-content table th,
 .docs-content table td {
@@ -864,7 +1054,15 @@ a:hover { color: var(--primary-hover); text-decoration: none; }
 
 /* ============================================
    RESPONSIVE
-   ============================================ */
+   ============================================
+   Horizontal page scroll is fixed at each source below rather than with
+   `body { overflow-x: hidden }`, which only hides the symptom and breaks
+   sticky positioning. */
+
+/* No image may exceed its column, whatever its intrinsic size. Height is left
+   alone so the fixed-height crops (.gallery-item, .blog-post) still apply. */
+img { max-width: 100% !important; }
+
 @media (max-width: 991px) {
   .hero { padding: 160px 0 100px !important; }
   .hero-content h1, .hero-content h1 h1 { font-size: 36px !important; }
@@ -885,4 +1083,23 @@ a:hover { color: var(--primary-hover); text-decoration: none; }
   .contact .contact-aria { padding: 36px 20px !important; }
   .testimonial-content h4 { font-size: 28px !important; }
   .service-item { padding: 28px 20px !important; }
+  .about { padding-top: 110px !important; }
+  .story { padding: 48px 0 28px !important; }
+  .story-content { padding-right: 0 !important; text-align: center !important; }
+  .contact-form { padding: 28px 20px !important; }
+  .sponsorship-form-section { padding: 48px 0 !important; }
+  /* The mailto helper text wraps to several lines on a phone; a long address must
+     break rather than push the card sideways. */
+  .email-form-note, .email-form-status { padding: 0 4px !important; }
+  .email-form-note a { overflow-wrap: anywhere !important; }
+  /* Data tables scroll inside their own box rather than widening the page.
+     nowrap keeps cells legible instead of collapsing to one word per line. */
+  .docs-content table {
+    display: block !important;
+    width: 100% !important;
+    overflow-x: auto !important;
+    white-space: nowrap !important;
+  }
+  .team-photo figcaption { padding: 0 12px !important; }
+  .sponsor-card { margin-bottom: 16px !important; }
 }

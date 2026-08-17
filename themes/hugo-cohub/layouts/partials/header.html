@@ -20,7 +20,10 @@
           {{ $menu := .Site.Menus.main}}
           {{range $index, $element := $menu}}
           <li class="nav-item {{ if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} active{{ end }}">
-             <a class="nav-link scroll-to" href="{{ .URL | relURL }}">{{.Name}}</a>
+             {{/* Only in-page anchors get "scroll-to"; the smooth-scroll handler
+                  hijacks every link carrying that class. Cross-page links must
+                  navigate normally. */}}
+             <a class="nav-link{{ if and (hasPrefix .URL "#") $currentPage.IsHome }} scroll-to{{ end }}" href="{{ .URL | relURL }}">{{.Name}}</a>
           </li>
           {{end}}
         </ul>

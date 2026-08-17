@@ -3,6 +3,11 @@ window.addEventListener("DOMContentLoaded", function() {
   var button = document.getElementById("contact-form-button");
   var status = document.getElementById("contact-form-status");
 
+  // footer.html loads this on every page, and the contact form is now handled by
+  // partials/emailFormScript.html, so #contact-form no longer exists. Bail out
+  // rather than throwing a TypeError on every page load.
+  if (!form) return;
+
   function success() {
     form.reset();
     button.style = "display: none ";

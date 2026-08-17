@@ -11,17 +11,24 @@
     </div>
 
     {{ with .Site.Data.sponsors }}
-    <!-- Current Sponsors -->
-    <div class="row justify-content-center">
-      {{ range .sponsors }}
-      <div class="col-lg-4 col-md-6 mb-4">
-        <a href="{{ .url }}" target="_blank" class="sponsor-card">
-          <img src="{{ .logo }}" alt="{{ .name }}">
-          <h4>{{ .name }}</h4>
-        </a>
+    <!-- Sponsors grouped by academic year, newest first -->
+    {{ range .years }}
+      {{ if .sponsors }}
+      <div class="sponsor-year">
+        <h3 class="sponsor-year-title">{{ .year }}</h3>
+        <div class="row justify-content-center">
+          {{ range .sponsors }}
+          <div class="col-lg-4 col-md-6 mb-4">
+            <a href="{{ .url }}" target="_blank" class="sponsor-card">
+              <img src="{{ .logo }}" alt="{{ .name }}">
+              <h4>{{ .name }}</h4>
+            </a>
+          </div>
+          {{ end }}
+        </div>
       </div>
       {{ end }}
-    </div>
+    {{ end }}
     {{ end }}
   </div>
 </section>
@@ -36,23 +43,39 @@
           Get in touch with us to discuss sponsorship opportunities.
         </p>
         <div class="sponsorship-form">
-          <form action="{{ .Site.Params.fabFormURL }}" method="POST">
-            <input type="hidden" name="_subject" value="Sponsorship Inquiry - TurtleRabbit">
+          {{ $inbox := .Site.Params.sponsorshipEmail }}
+          <!-- Handled by partials/emailFormScript.html — see that file for the markup contract. -->
+          <form id="sponsorship-form"
+                data-inbox="{{ $inbox }}"
+                data-subject="Sponsorship EOI"
+                data-subject-from="sponsor-org sponsor-name"
+                data-status="sponsorship-form-status">
             <div class="row">
               <div class="col-md-6">
-                <input type="text" class="form-control" name="Name" placeholder="Your Name" required>
+                <input type="text" class="form-control" id="sponsor-name" data-label="Name" placeholder="Your Name" required>
               </div>
               <div class="col-md-6">
-                <input type="text" class="form-control" name="Organisation" placeholder="Organisation">
+                <input type="text" class="form-control" id="sponsor-org" data-label="Organisation" placeholder="Organisation">
               </div>
             </div>
-            <input type="email" class="form-control" name="email" placeholder="Email Address" required>
-            <textarea class="form-control" name="message" placeholder="Tell us about your interest in sponsoring TurtleRabbit..." rows="4"></textarea>
-            <button type="submit" class="btn btn-primary" formtarget="_blank">Send Inquiry</button>
+            <input type="email" class="form-control" id="sponsor-email" data-label="Email" placeholder="Email Address" required>
+            <input type="text" class="form-control" id="sponsor-phone" data-label="Phone" placeholder="Phone (optional)">
+            <textarea class="form-control" id="sponsor-message" data-label="Message" placeholder="Tell us about your interest in sponsoring TurtleRabbit..." rows="4" required></textarea>
+            <button type="submit" class="btn btn-primary">Send Inquiry</button>
           </form>
+
+          <p class="email-form-note">
+            This opens your email app with the message ready to send. If nothing
+            happens, email us directly at
+            <a href="mailto:{{ $inbox }}">{{ $inbox }}</a>
+            — or <button type="button" data-copy-for="sponsorship-form" class="email-form-copy">copy your enquiry to the clipboard</button>.
+          </p>
+          <p id="sponsorship-form-status" class="email-form-status" role="status" aria-live="polite"></p>
         </div>
       </div>
     </div>
   </div>
 </section>
+
+{{ partial "emailFormScript.html" . }}
 {{end}}
